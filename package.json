@@ -1,0 +1,31 @@
+{
+  "name": "warranty-claims-capstone",
+  "version": "1.0.0",
+  "description": "*workspace/nodeclass/warranty-claims-capstone*",
+  "main": "server.js",
+  "engines": {
+    "node": "6"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install && npm run db:seed",
+    "db:seed": "node db/dbseed.js",
+    "deploy": "git push heroku master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lathammatt/warranty-claims-capstone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lathammatt/warranty-claims-capstone/issues"
+  },
+  "homepage": "https://github.com/lathammatt/warranty-claims-capstone#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongoose": "^4.6.4",
+    "pug": "^2.0.0-beta6"
+  }
+}
