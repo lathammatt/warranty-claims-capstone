@@ -9,4 +9,3 @@ module.exports = mongoose.model('Claim', {
   "parts": String,
   "labor": String,
 })
-
