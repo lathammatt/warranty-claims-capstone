@@ -6,7 +6,7 @@ Backend capstone project based off of Nissan Warranty Claims table database. Pro
 
 Using:
 
-    - Express 4.14.0
+    - Express 4.14
     - Mongoose 4.6.4
     - Pug 2.0
     - Bootstrap 3.3.7
