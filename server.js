@@ -14,7 +14,7 @@ app.set('view engine', 'pug')
 if(process.env.NODE_ENV !== 'production'){
 	app.locals.pretty = true
 }
-app.locals.company = "Warranty_Claims"
+app.locals.company = "Warranty Claims"
 
 //middleware
 app.use(express.static('public'))
