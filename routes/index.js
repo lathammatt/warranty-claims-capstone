@@ -8,14 +8,14 @@ router.get("/", (req, res) => {
   res.render('index')
 })
 
-router.get('/claim', (req, res, err) => {
-  Promise
-    .all([
-      Vehicles.find().sort({name: 1}),
-      Parts.find().sort({name: 1}),
-      Labor.find().sort({name: 1})
-    ])
-})
+// router.get('/claim', (req, res, err) => {
+//   Promise
+//     .all([
+//       Vehicles.find().sort({name: 1}),
+//       Parts.find().sort({name: 1}),
+//       Labor.find().sort({name: 1})
+//     ])
+// })
 
 
 router.post('/claim', (req, res, err) => {
@@ -26,7 +26,7 @@ router.post('/claim', (req, res, err) => {
 })
 
 router.get('/confirm', (req, res) => {
-  res.render('confirm', {page: 'Claim'})
+  res.render('index')
 })
 
 router.get("/404", (req, res) => {
