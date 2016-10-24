@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Engine"
+  },
+  {
+    "name": "Transmission"
+  },
+  {
+    "name": "Electrical"
+  },
+  {
+    "name": "Wheels"
+  },
+  {
+    "name": "Body"
+  },
+  {
+    "name": "Suspension"
+  },
+  {
+    "name": "Seats"
+  },
+  {
+    "name": "Windows"
+  },
+  {
+    "name": "Doors"
+  },
+  {
+    "name": "Steering"
+  },
+  {
+    "name": "Finishers"
+  },
+  {
+    "name": "Emissions"
+  },
+  {
+    "name": "Nav/Radio"
+  },
+]
