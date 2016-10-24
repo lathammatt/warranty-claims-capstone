@@ -1,0 +1,74 @@
+[
+  {
+    "brand":"Nissan",
+    "name": "Sentra"
+  },
+  {
+    "brand":"Nissan",
+    "name": "Altima"
+  },
+  {
+    "brand":"Nissan",
+    "name": "Maxima"
+  },
+  {
+    "brand":"Nissan",
+    "name": "Rogue"
+  },
+  {
+    "brand":"Nissan",
+    "name": "Murano"
+  },
+  {
+    "brand":"Nissan",
+    "name": "Frontier"
+  },
+  {
+    "brand":"Nissan",
+    "name": "Titan"
+  },
+  {
+    "brand":"Nissan",
+    "name": "Armada"
+  },
+  {
+    "brand":"Nissan",
+    "name": "370Z"
+  },
+  {
+    "brand":"Infiniti",
+    "name": "Q30"
+  },
+  {
+    "brand":"Infiniti",
+    "name": "Q50"
+  },
+  {
+    "brand":"Infiniti",
+    "name": "Q60"
+  },
+  {
+    "brand":"Infiniti",
+    "name": "Q70"
+  },
+  {
+    "brand":"Infiniti",
+    "name": "QX30"
+  },
+  {
+    "brand":"Infiniti",
+    "name": "QX50"
+  },
+  {
+    "brand":"Infiniti",
+    "name": "QX60"
+  },
+  {
+    "brand":"Infiniti",
+    "name": "QX70"
+  },
+  {
+    "brand":"Infiniti",
+    "name": "QX80"
+  }
+]
