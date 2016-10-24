@@ -21,7 +21,7 @@ router.get('/claim', (req, res, err) => {
 router.post('/claim', (req, res, err) => {
   Claim
     .create(req.body)
-    .then(() => res.redirect('/confirm'))
+    // .then(() => res.redirect('/confirm'))
     .catch(err)
 })
 
