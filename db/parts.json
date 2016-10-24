@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Long Block V6",
+    "cost": 12000,
+    "section": "Engine",
+    "labor": "AA20AA"
+  },
+  {
+    "name": "Short Block V6",
+    "cost": 8000,
+    "section": "Engine",
+    "labor": "AA30AA"
+  },
+  {
+    "name": "Long Block 4-cyl",
+    "cost": 7000,
+    "section": "Engine",
+    "labor": "AA20AA"
+  },
+  {
+    "name": "Short Block 4-cyl",
+    "cost": 5000,
+    "section": "Engine",
+    "labor": "AA30AA"
+  }
+]
