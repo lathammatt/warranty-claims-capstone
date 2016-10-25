@@ -3,24 +3,168 @@
     "name": "Long Block V6",
     "cost": 12000,
     "section": "Engine",
-    "labor": "AA20AA"
+    "labor": "AA20AA",
+    "models": []
   },
   {
     "name": "Short Block V6",
     "cost": 8000,
     "section": "Engine",
-    "labor": "AA30AA"
+    "labor": "AA30AA",
+    "models": []
   },
   {
     "name": "Long Block 4-cyl",
     "cost": 7000,
     "section": "Engine",
-    "labor": "AA20AA"
+    "labor": "AA20AA",
+    "models": []
   },
   {
     "name": "Short Block 4-cyl",
     "cost": 5000,
     "section": "Engine",
-    "labor": "AA30AA"
+    "labor": "AA30AA",
+    "models": []
+  },
+  {
+    "name": "4-cyl Cylinder Head",
+    "cost": 1800,
+    "section": "Engine",
+    "labor": "CD10AA",
+    "models": []
+  },
+  {
+    "name": "V6 Cylinder Head",
+    "cost": 2800,
+    "section": "Engine",
+    "labor": "CD10AA",
+    "models": []
+  },
+  {
+    "name": "Small Piston",
+    "cost": 150,
+    "section": "Engine",
+    "labor": "CD20AA",
+    "models": []
+  },
+  {
+    "name": "Large Piston",
+    "cost": 250,
+    "section": "Engine",
+    "labor": "CD20AA",
+    "models": []
+  },
+  {
+    "name": "Large Cylinder Head Gasket",
+    "cost": 175,
+    "section": "Engine",
+    "labor": "CD30AA",
+    "models": []
+  },
+  {
+    "name": "Small Cylinder Head Gasket",
+    "cost": 125,
+    "section": "Engine",
+    "labor": "CD30AA",
+    "models": []
+  },
+  {
+    "name": "4-cyl Timing Chain Cover",
+    "cost": 300,
+    "section": "Engine",
+    "labor": "CD40AA",
+    "models": []
+  },
+  {
+    "name": "V6 Timing Chain Cover",
+    "cost": 350,
+    "section": "Engine",
+    "labor": "CD40AA",
+    "models": []
+  },
+  {
+    "name": "4-Cyl Crankshaft",
+    "cost": 500,
+    "section": "Engine",
+    "labor": "CD45AA",
+    "models": []
+  },
+  {
+    "name": "V6 Crankshaft",
+    "cost": 600,
+    "section": "Engine",
+    "labor": "CD45AA",
+    "models": []
+  },
+  {
+    "name": "Small Camshaft",
+    "cost": 250,
+    "section": "Engine",
+    "labor": "CD35AA",
+    "models": []
+  },
+  {
+    "name": "Large Camshaft",
+    "cost": 275,
+    "section": "Engine",
+    "labor": "CD35AA",
+    "models": []
+  },
+  {
+    "name": "Large Right Exhaust Manifold",
+    "cost": 450,
+    "section": "Engine",
+    "labor": "AT40AA",
+    "models": []
+  },
+  {
+    "name": "Large Left Exhaust Manifold",
+    "cost": 450,
+    "section": "Engine",
+    "labor": "AT41AA",
+    "models": []
+  },
+  {
+    "name": "Small Right Exhaust Manifold",
+    "cost": 375,
+    "section": "Engine",
+    "labor": "AT40AA",
+    "models": []
+  },
+  {
+    "name": "Small Left Exhaust Manifold",
+    "cost": 375,
+    "section": "Engine",
+    "labor": "AT41AA",
+    "models": []
+  },
+  {
+    "name": "Front Engine Mount",
+    "cost": 175,
+    "section": "Engine",
+    "labor": "AT20AA",
+    "models": []
+  },
+  {
+    "name": "Rear Engine Mount",
+    "cost": 175,
+    "section": "Engine",
+    "labor": "AT20AA",
+    "models": []
+  },
+  {
+    "name": "Right Engine Mount",
+    "cost": 175,
+    "section": "Engine",
+    "labor": "AT20AA",
+    "models": []
+  },
+  {
+    "name": "Left Engine Mount",
+    "cost": 175,
+    "section": "Engine",
+    "labor": "AT20AA",
+    "models": []
   }
 ]
