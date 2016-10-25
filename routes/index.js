@@ -6,11 +6,12 @@ const Claim = require('../models/claim')
 
 router.get("/", (req, res) => {
   Promise
-    .all([
-      Dealers.find().sort({ inches: 1 }),
-    ])
-    .then(([sizes, toppings]) =>
-      res.render('order', { page: 'Order', sizes, toppings })
+    .all(
+      Dealers.find({ brand:"" //by brand value//
+        })
+    )
+    .then((name) =>
+      res.render('index', { page: 'index', name })
     )
 })
 
