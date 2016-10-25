@@ -5,15 +5,21 @@ const router = Router()
 const Claim = require('../models/claim')
 
 router.get("/", (req, res) => {
-  res.render('index')
+  Promise
+    .all([
+      Dealers.find().sort({ inches: 1 }),
+    ])
+    .then(([sizes, toppings]) =>
+      res.render('order', { page: 'Order', sizes, toppings })
+    )
 })
 
 router.get('/claim', (req, res, err) => {
   Promise
     .all([
-      Vehicles.find().sort({name: 1}),
-      Parts.find().sort({name: 1}),
-      Labor.find().sort({name: 1})
+      Vehicles.find().sort({ name: 1 }),
+      Parts.find().sort({ name: 1 }),
+      Labor.find().sort({ name: 1 })
     ])
 })
 
