@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Nissan of Mordor",
+    "rate": 60,
+    "brand": "Nissan"
+  },
+  {
+    "name": "Nissan of San Diego",
+    "rate": 120,
+    "brand": "Nissan"
+  },
+  {
+    "name": "Nissan of Downtown",
+    "rate": 75,
+    "brand": "Nissan"
+  },
+  {
+    "name": "Nissan of Fort Worth",
+    "rate": 90,
+    "brand": "Nissan"
+  },
+  {
+    "name": "Infiniti of Cool Springs",
+    "rate": 110,
+    "brand": "Infiniti"
+  },
+  {
+    "name": "Infiniti of Rivendell",
+    "rate": 350,
+    "brand": "Infiniti"
+  }
+]
