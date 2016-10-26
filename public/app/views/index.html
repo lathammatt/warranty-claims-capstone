@@ -6,8 +6,8 @@
   <title>Vehicle Warranty Claims</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href=".../css/main.css">
+  <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
 <body ng-app="Warranty">
@@ -17,15 +17,22 @@
         <h3>Warranty Claims</h3>
 
       </div>
-    </div><!-- fluid container -->
+    </div>
+    <!-- fluid container -->
   </nav>
   <div class="container">
     <div ng-view>
 
     </div>
   </div>
-  <script src="./public/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="/lib/jquery/dist/jquery.min.js"></script>
+
+  <!-- third party -->
+  <script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../lib/jquery/dist/jquery.min.js"></script>
+
+  <!-- controllers -->
+  <script src="../app.js"></script>
+  <script src="../controllers/dealerctrl.js"></script>
 </body>
 
 </html>

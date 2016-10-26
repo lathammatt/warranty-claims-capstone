@@ -3,16 +3,17 @@
 const { Router } = require('express')
 const router = Router()
 const Claim = require('../models/claim')
+const Dealer = require('../models/dealers')
 
-router.get("/", (req, res) => {
-  Promise
-    .all(
-      Dealers.find({ brand:"" //by brand value//
-        })
-    )
-    .then((name) =>
-      res.render('index', { page: 'index', name })
-    )
+router.get('/', (req, res) => {
+  res.render('index')
+})
+
+router.get("/dealer", (req, res, err) => {
+  Dealer
+    .find()
+    .then(dealers => res.json(dealers))
+    .catch(err)
 })
 
 router.get('/claim', (req, res, err) => {
