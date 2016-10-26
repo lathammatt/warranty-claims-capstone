@@ -12,6 +12,7 @@ app.controller("DealerCtrl", function($scope, $http) {
     })
 
   $scope.brandSelect = (brand) => {
+    $scope.dealerList = []
     selection = brand
     console.log(selection)
 
