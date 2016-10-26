@@ -12,7 +12,11 @@
 </div>
 <div class="row">
   <select ng-model="dealers" ng-options="item for item in dealerList" ng-change="dealerChoice(dealers)">
-    <option value="{{item}}>{{item}}</option>
+    <option value="{{item}}>{{item}}"</option>
 
   </select>
+</div>
+<div class="spacer"></div>
+<div class="row">
+  <button type="submit" class="btn btn-primary" ng-click="startClaim()">Proceed to Claim Submission</button>
 </div>

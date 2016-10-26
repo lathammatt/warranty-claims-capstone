@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller("DealerCtrl", function($scope, $http, DataFactory) {
+app.controller("DealerCtrl", function($scope, $http, DataFactory, $location) {
   let shops = {}
   $scope.dealerList = []
   let selection = null
@@ -32,5 +32,15 @@ app.controller("DealerCtrl", function($scope, $http, DataFactory) {
     console.log(choice)
     console.log(shops)
     DataFactory.setDealer(choice)
+  }
+
+  $scope.startClaim = () => {
+    let check = DataFactory.getDealer()
+    if (check === null){
+      console.log("nope, not yet")
+    } else {
+      console.log("off to claim")
+      $location.url('/claim')
+    }
   }
 })
