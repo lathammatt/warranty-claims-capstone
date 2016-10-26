@@ -1,14 +1,18 @@
 <div class="row">
   <label>Select your vehicle brand</label>
+</div>
+<div class="row">
   <select ng-model="brand" ng-change="brandSelect(brand)">
-    <option value="nissan">Nissan</option>
-    <option value="infiniti">Infiniti</option>
+    <option value="Nissan">Nissan</option>
+    <option value="Infiniti">Infiniti</option>
   </select>
 </div>
 <div class="row">
   <label>Select your dealership</label>
-  <select ng-model="dealers" ng-options="item.name for item in dealerList">
-    <option>Select Dealer</option>
+</div>
+<div class="row">
+  <select ng-model="dealers" ng-options="item for item in dealerList">
+    <option>{{item.name}}</option>
 
   </select>
 </div>
