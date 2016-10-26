@@ -11,7 +11,7 @@
   <label>Select your dealership</label>
 </div>
 <div class="row">
-  <select ng-model="dealers" ng-options="item for item in dealerList">
+  <select ng-model="dealers" ng-options="item for item in dealerList" ng-change="dealerChoice(dealers)">
     <option value="{{item}}>{{item}}</option>
 
   </select>
