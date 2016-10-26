@@ -11,7 +11,7 @@ const app = express()
 const PORT = process.env.PORT || 7575
 app.set('port', PORT)
 
-app.set('view engine', 'pug')
+// app.set('view engine', '')
 
 if (process.env.NODE_ENV !== 'production') {
   app.locals.pretty = true
