@@ -1,11 +1,11 @@
 'use strict';
 
-const app = angular.module("Warranty", [ngRoute])
+const app = angular.module("Warranty", ['ngRoute'])
 
 app.config(function($routeProvider) {
   $routeProvider
     .when('/dealer', {
-      templateUrl: 'partials/dealer.html',
+      templateUrl: 'views/partials/dealer.html',
       controller: 'DealerCtrl'
     })
     .otherwise('/')
