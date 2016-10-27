@@ -4,6 +4,7 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory) {
   $scope.vehicleList = []
   $scope.sectionsList = []
   $scope.partsList = []
+  $scope.laborList = []
   let wheels = {}
   let brand = DataFactory.getBrand()
   let car = null
@@ -37,24 +38,33 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory) {
     let sectionMatch = []
     $http.get('/api/parts')
       .then(({ data: parts }) => {
-          console.log("parts", parts)
-          trinkets = parts
-          for (let i = 0; i < parts.length; i++) {
-            if (parts[i].section === section) {
-              sectionMatch.push(parts[i])
+        console.log("parts", parts)
+        trinkets = parts
+        for (let i = 0; i < parts.length; i++) {
+          if (parts[i].section === section) {
+            sectionMatch.push(parts[i])
+          }
+        }
+        for (let i = 0; i < sectionMatch.length; i++) {
+          for (let j = 0; j < sectionMatch[i].models.length; j++) {
+            if (sectionMatch[i].models[j] === car) {
+              console.log(sectionMatch[i].models[j], car)
+              $scope.partsList.push(sectionMatch[i].name)
+              // $scope.laborList.push(sectionMatch[i].labor)
             }
           }
-          for (let i = 0; i < sectionMatch.length; i++) {
-            for (let j = 0; j < sectionMatch[i].models.length; j++) {
-              if (sectionMatch[i].models[j] === car) {
-                console.log(sectionMatch[i].models[j], car)
-                $scope.partsList.push(sectionMatch[i].name)
-              }
-            }
-          }
-        })
-}
+        }
+      })
+  }
 
+  $scope.populateLabor = (part) => {
+    $scope.laborList = []
+    for (let i = 0; i < trinkets.length; i++){
+      if (trinkets[i].name === part){
+        $scope.laborList.push(trinkets[i].labor)
+      }
+    }
+  }
 
 
 })

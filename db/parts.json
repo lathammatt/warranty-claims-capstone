@@ -11,14 +11,14 @@
     "cost": 8000,
     "section": "Engine",
     "labor": "AA30AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"]
+    "models": ["Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
   },
   {
     "name": "Long Block 4-Cyl",
     "cost": 7000,
     "section": "Engine",
     "labor": "AA20AA",
-    "models": ["Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"]
   },
   {
     "name": "Short Block 4-Cyl",
