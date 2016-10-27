@@ -1,6 +1,6 @@
 'use strict';
 
-app.factory('DataFactory', function(){
+app.factory('DataFactory', function($http, $q) {
   let currentDealer = null
   let dealerRate = null
   let currentBrand = null
@@ -11,8 +11,19 @@ app.factory('DataFactory', function(){
     console.log("dealer", currentDealer)
   }
 
-  const getDealer = () => {
-    return currentDealer
+  const getDealers = () => {
+    let dealers = []
+    return $q((resolve, reject) => {
+      $http.get('/api/dealer')
+        .success((returnedData) => {
+          console.log("data", returnedData)
+          dealers = returnedData
+          resolve(dealers)
+        })
+        .error((err) => {
+          reject(err)
+        })
+    })
   }
 
   const setBrand = (brand) => {
@@ -36,5 +47,5 @@ app.factory('DataFactory', function(){
 
 
 
-  return {setDealer, getDealer, setRate, getRate, setBrand, getBrand}
+  return { setDealer, getDealers, setBrand, getBrand, setSection, getSection }
 })

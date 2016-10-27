@@ -5,9 +5,10 @@ app.controller("DealerCtrl", function($scope, $http, DataFactory, $location, Mat
   $scope.dealerList = []
   let selection = null
 
-  $http.get('/api/dealer')
-    .then(({ data: dealers }) => {
-      shops = dealers
+  DataFactory.getDealers()
+    .then((object) => {
+      console.log("dealers", object)
+      shops = object
       console.log(shops)
     })
 
@@ -36,7 +37,6 @@ app.controller("DealerCtrl", function($scope, $http, DataFactory, $location, Mat
       if (shops[i].name === choice) {
         MathFactory.setRate(shops[i].rate)
         DataFactory.setBrand(shops[i].brand)
-        console.log(DataFactory.getRate())
       }
     }
   }

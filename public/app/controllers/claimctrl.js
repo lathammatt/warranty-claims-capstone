@@ -61,7 +61,7 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
     $scope.laborList = []
     for (let i = 0; i < trinkets.length; i++) {
       if (trinkets[i].name === part) {
-        MathFactory.setPartPrice(trinkets[i].cost)
+        MathFactory.setPartSum(trinkets[i].cost)
         $scope.laborList.push(trinkets[i].labor)
       }
     }
