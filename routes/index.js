@@ -5,6 +5,7 @@ const router = Router()
 const Claim = require('../models/claim')
 const Dealer = require('../models/dealers')
 const Vehicle = require('../models/vehicle')
+const Sections = require('../models/sections')
 
 router.get('/', (req, res) => {
   res.render('index')
@@ -22,8 +23,15 @@ router.get('/api/vehicles', (req, res, err) => {
     .find().sort({name: 1})
     .then(vehicles => res.json(vehicles))
     .catch(err)
-
 })
+
+router.get('/api/sections', (req, res, err) => {
+  Sections
+    .find().sort({name: 1})
+    .then(sections => res.json(sections))
+    .catch(err)
+})
+
 
 
 router.post('/claim', (req, res, err) => {
