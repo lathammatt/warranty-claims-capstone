@@ -3,9 +3,11 @@
 app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory) {
   $scope.vehicleList = []
   $scope.sectionsList = []
+  $scope.partsList = []
   let wheels = {}
   let brand = DataFactory.getBrand()
   let car = null
+  let trinkets = {}
 
   $http.get('/api/vehicles')
     .then(({ data: vehicles }) => {
@@ -31,15 +33,27 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory) {
   }
 
   $scope.populateParts = (section) => {
-    car = section
+    $scope.partsList = []
+    let sectionMatch = []
     $http.get('/api/parts')
-      .then(({ data: sections }) => {
-        console.log("sections", sections)
-        for (let i = 0; i < sections.length; i++) {
-          $scope.sectionsList.push(sections[i].name)
-        }
-      })
-  }
+      .then(({ data: parts }) => {
+          console.log("parts", parts)
+          trinkets = parts
+          for (let i = 0; i < parts.length; i++) {
+            if (parts[i].section === section) {
+              sectionMatch.push(parts[i])
+            }
+          }
+          for (let i = 0; i < sectionMatch.length; i++) {
+            for (let j = 0; j < sectionMatch[i].models.length; j++) {
+              if (sectionMatch[i].models[j] === car) {
+                console.log(sectionMatch[i].models[j], car)
+                $scope.partsList.push(sectionMatch[i].name)
+              }
+            }
+          }
+        })
+}
 
 
 

@@ -6,6 +6,7 @@ const Claim = require('../models/claim')
 const Dealer = require('../models/dealers')
 const Vehicle = require('../models/vehicle')
 const Sections = require('../models/sections')
+const Parts = require('../models/parts')
 
 router.get('/', (req, res) => {
   res.render('index')
@@ -28,6 +29,13 @@ router.get('/api/vehicles', (req, res, err) => {
 router.get('/api/sections', (req, res, err) => {
   Sections
     .find().sort({name: 1})
+    .then(sections => res.json(sections))
+    .catch(err)
+})
+
+router.get('/api/parts', (req, res, err) => {
+  Parts
+    .find()
     .then(sections => res.json(sections))
     .catch(err)
 })
