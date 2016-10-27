@@ -14,21 +14,21 @@
     "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"]
   },
   {
-    "name": "Long Block 4-cyl",
+    "name": "Long Block 4-Cyl",
     "cost": 7000,
     "section": "Engine",
     "labor": "AA20AA",
     "models": ["Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
   },
   {
-    "name": "Short Block 4-cyl",
+    "name": "Short Block 4-Cyl",
     "cost": 5000,
     "section": "Engine",
     "labor": "AA30AA",
     "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"]
   },
   {
-    "name": "4-cyl Cylinder Head",
+    "name": "4-Cyl Cylinder Head",
     "cost": 1800,
     "section": "Engine",
     "labor": "CD10AA",
@@ -70,7 +70,7 @@
     "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"]
   },
   {
-    "name": "4-cyl Timing Chain Cover",
+    "name": "4-Cyl Timing Chain Cover",
     "cost": 300,
     "section": "Engine",
     "labor": "CD40AA",
@@ -166,5 +166,12 @@
     "section": "Engine",
     "labor": "AT20AA",
     "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60", "Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+  },
+  {
+    "name": "CVT Transmission",
+    "cost": 9000,
+    "section": "Transmission",
+    "labor": "LD40AA",
+    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60", "Murano"]
   }
 ]

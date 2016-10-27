@@ -2,6 +2,20 @@
   <label>Select Vehicle Model</label>
 </div>
 <div class="row">
-  <select ng-model="vehicle" ng-options="item for item in vehicleList" ng-change="">
+  <select ng-model="vehicle" ng-options="item for item in vehicleList" ng-change="populateSections(vehicle)">
+  </select>
+</div>
+<div class="row">
+  <label>Select Section For Repair</label>
+</div>
+<div class="row">
+  <select ng-model="sect" ng-options="group for group in sectionsList" ng-change="populateParts(sect)">
+  </select>
+</div>
+<div class="row">
+  <label>Select Parts Replaced</label>
+</div>
+<div class="row">
+  <select ng-model="parts" ng-options="item for item in partsList" ng-change="">
   </select>
 </div>
