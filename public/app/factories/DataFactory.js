@@ -4,32 +4,33 @@ app.factory('DataFactory', function(){
   let currentDealer = null
   let dealerRate = null
   let currentBrand = null
+  let chosenSect = null
 
-  let setDealer = (dealer) => {
+  const setDealer = (dealer) => {
     currentDealer = dealer
     console.log("dealer", currentDealer)
   }
 
-  let getDealer = () => {
+  const getDealer = () => {
     return currentDealer
   }
 
-  let setRate = (rate) => {
-    dealerRate = rate
-    console.log("rate", dealerRate)
-  }
-
-  let getRate = () => {
-    return dealerRate
-  }
-
-  let setBrand = (brand) => {
+  const setBrand = (brand) => {
     currentBrand = brand
     console.log("brand", currentBrand)
   }
 
-  let getBrand = () => {
+  const getBrand = () => {
     return currentBrand
+  }
+
+  const setSection = (section) => {
+    chosenSect = section
+    console.log("section", chosenSect)
+  }
+
+  const getSection = () => {
+    return chosenSect
   }
 
 

@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller("DealerCtrl", function($scope, $http, DataFactory, $location) {
+app.controller("DealerCtrl", function($scope, $http, DataFactory, $location, MathFactory) {
   let shops = {}
   $scope.dealerList = []
   let selection = null
@@ -34,7 +34,7 @@ app.controller("DealerCtrl", function($scope, $http, DataFactory, $location) {
     DataFactory.setDealer(choice)
     for (let i = 0; i < shops.length; i++) {
       if (shops[i].name === choice) {
-        DataFactory.setRate(shops[i].rate)
+        MathFactory.setRate(shops[i].rate)
         DataFactory.setBrand(shops[i].brand)
         console.log(DataFactory.getRate())
       }
