@@ -11,6 +11,10 @@ app.factory('DataFactory', function($http, $q) {
     console.log("dealer", currentDealer)
   }
 
+  const getDealer = () => {
+    return currentDealer
+  }
+
   const getDealers = () => {
     let dealers = []
     return $q((resolve, reject) => {
@@ -45,7 +49,21 @@ app.factory('DataFactory', function($http, $q) {
   }
 
 
+  const getVehicles = () => {
+    let cars = []
+    return $q((resolve, reject) => {
+      $http.get('/api/vehicles')
+        .success((returnedData) => {
+          console.log("data", returnedData)
+          cars = returnedData
+          resolve(cars)
+        })
+        .error((err) => {
+          reject(err)
+        })
+    })
+  }
 
 
-  return { setDealer, getDealers, setBrand, getBrand, setSection, getSection }
+  return { setDealer, getDealer, getDealers, setBrand, getBrand, setSection, getSection, getVehicles}
 })

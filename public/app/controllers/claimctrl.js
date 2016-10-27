@@ -10,8 +10,8 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
   let car = null
   let trinkets = {}
 
-  $http.get('/api/vehicles')
-    .then(({ data: vehicles }) => {
+  DataFactory.getVehicles()
+    .then((vehicles) => {
       wheels = vehicles
       console.log(wheels)
       for (let i = 0; i < wheels.length; i++) {
