@@ -4,25 +4,25 @@ const { Router } = require('express')
 const router = Router()
 const Claim = require('../models/claim')
 const Dealer = require('../models/dealers')
+const Vehicle = require('../models/vehicle')
 
 router.get('/', (req, res) => {
   res.render('index')
 })
 
-router.get("/api/dealer", (req, res, err) => {
+router.get('/api/dealer', (req, res, err) => {
   Dealer
-    .find()
+    .find().sort({name: 1})
     .then(dealers => res.json(dealers))
     .catch(err)
 })
 
-router.get('/claim', (req, res, err) => {
-  Promise
-    .all([
-      Vehicles.find().sort({ name: 1 }),
-      Parts.find().sort({ name: 1 }),
-      Labor.find().sort({ name: 1 })
-    ])
+router.get('/api/vehicles', (req, res, err) => {
+  Vehicle
+    .find().sort({name: 1})
+    .then(vehicles => res.json(vehicles))
+    .catch(err)
+
 })
 
 
