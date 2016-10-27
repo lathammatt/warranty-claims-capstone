@@ -13,7 +13,7 @@ app.controller("DealerCtrl", function($scope, $http, DataFactory, $location) {
 
   $scope.brandSelect = (brand) => {
     console.log(shops)
-      // DataFactory.setDealer(null)
+    DataFactory.setDealer(null)
     $scope.dealerList = []
     selection = brand
     console.log(selection)
@@ -35,6 +35,7 @@ app.controller("DealerCtrl", function($scope, $http, DataFactory, $location) {
     for (let i = 0; i < shops.length; i++) {
       if (shops[i].name === choice) {
         DataFactory.setRate(shops[i].rate)
+        DataFactory.setBrand(shops[i].brand)
         console.log(DataFactory.getRate())
       }
     }

@@ -8,5 +8,9 @@ app.config(function($routeProvider) {
       templateUrl: 'app/views/partials/dealer.html',
       controller: 'DealerCtrl'
     })
+    .when('/claim', {
+      templateUrl: 'app/views/partials/claim.html',
+      controller: 'ClaimCtrl'
+    })
     .otherwise('/')
 })
