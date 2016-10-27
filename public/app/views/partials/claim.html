@@ -16,6 +16,14 @@
   <label>Select Parts Replaced</label>
 </div>
 <div class="row">
-  <select ng-model="parts" ng-options="item for item in partsList" ng-change="">
+  <select ng-model="parts" ng-options="item for item in partsList" ng-change="populateLabor(parts)">
+  </select>
+</div>
+</div>
+<div class="row">
+  <label>Select Labor Opcode</label>
+</div>
+<div class="row">
+  <select ng-model="work" ng-options="item for item in laborList" ng-change="">
   </select>
 </div>
