@@ -27,3 +27,11 @@
   <select ng-model="work" ng-options="item for item in laborList" ng-change="">
   </select>
 </div>
+<div class="spacer">
+
+</div>
+<div class="row">
+  <button type="submit" class="btn btn-Success" ng-click="claimSubmit()">Submit Claim Entry</button>
+  <button type="submit" class="btn btn-danger" ng-click="resetPage()">Reset Page</button>
+  <button type="submit" class="btn btn-primary" ng-click="startClaim()">Go Back</button>
+</div>

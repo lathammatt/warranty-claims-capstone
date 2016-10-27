@@ -50,7 +50,6 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory) {
             if (sectionMatch[i].models[j] === car) {
               console.log(sectionMatch[i].models[j], car)
               $scope.partsList.push(sectionMatch[i].name)
-              // $scope.laborList.push(sectionMatch[i].labor)
             }
           }
         }
@@ -59,12 +58,22 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory) {
 
   $scope.populateLabor = (part) => {
     $scope.laborList = []
-    for (let i = 0; i < trinkets.length; i++){
-      if (trinkets[i].name === part){
+    for (let i = 0; i < trinkets.length; i++) {
+      if (trinkets[i].name === part) {
         $scope.laborList.push(trinkets[i].labor)
       }
     }
   }
 
+  $scope.resetPage = () => {
+    $scope.model = ''
+    $scope.sectionsList = []
+    $scope.partsList = []
+    $scope.laborList = []
+  }
+
+  $scope.claimSubmit = () => {
+
+  }
 
 })
