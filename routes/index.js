@@ -41,11 +41,10 @@ router.get('/api/parts', (req, res, err) => {
 })
 
 
-
-router.post('/claim', (req, res, err) => {
+router.post('/api/claim', ({body}, res, err) => {
   Claim
-    .create(req.body)
-    .then(() => res.redirect('/confirm'))
+    .create(body)
+    .then(res.end())
     .catch(err)
 })
 

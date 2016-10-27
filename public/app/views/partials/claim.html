@@ -2,14 +2,14 @@
   <label>Select Vehicle Model</label>
 </div>
 <div class="row">
-  <select ng-model="vehicle" ng-options="item for item in vehicleList" ng-change="populateSections(vehicle)">
+  <select ng-model="model" ng-options="item for item in vehicleList" ng-change="populateSections(model)">
   </select>
 </div>
 <div class="row">
   <label>Select Section For Repair</label>
 </div>
 <div class="row">
-  <select ng-model="sect" ng-options="group for group in sectionsList" ng-change="populateParts(sect)">
+  <select ng-model="section" ng-options="group for group in sectionsList" ng-change="populateParts(section)">
   </select>
 </div>
 <div class="row">
@@ -24,6 +24,14 @@
   <label>Select Labor Opcode</label>
 </div>
 <div class="row">
-  <select ng-model="work" ng-options="item for item in laborList" ng-change="">
+  <select ng-model="labor" ng-options="item for item in laborList" ng-change="calculateLabor(labor)">
   </select>
+</div>
+<div class="spacer">
+
+</div>
+<div class="row">
+  <button type="submit" class="btn btn-success" ng-click="claimSubmit()">Submit Claim Entry</button>
+  <button type="submit" class="btn btn-danger" ng-click="resetPage()">Reset Page</button>
+  <button type="submit" class="btn btn-primary" ng-click="startOver()">Go Back to Brand Select</button>
 </div>

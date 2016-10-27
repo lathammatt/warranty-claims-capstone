@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory) {
+app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, MathFactory) {
   $scope.vehicleList = []
   $scope.sectionsList = []
   $scope.partsList = []
@@ -36,6 +36,7 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory) {
   $scope.populateParts = (section) => {
     $scope.partsList = []
     let sectionMatch = []
+    DataFactory.setSection(section)
     $http.get('/api/parts')
       .then(({ data: parts }) => {
         console.log("parts", parts)
@@ -50,7 +51,6 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory) {
             if (sectionMatch[i].models[j] === car) {
               console.log(sectionMatch[i].models[j], car)
               $scope.partsList.push(sectionMatch[i].name)
-              // $scope.laborList.push(sectionMatch[i].labor)
             }
           }
         }
@@ -59,12 +59,51 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory) {
 
   $scope.populateLabor = (part) => {
     $scope.laborList = []
-    for (let i = 0; i < trinkets.length; i++){
-      if (trinkets[i].name === part){
+    for (let i = 0; i < trinkets.length; i++) {
+      if (trinkets[i].name === part) {
+        MathFactory.setPartPrice(trinkets[i].cost)
         $scope.laborList.push(trinkets[i].labor)
       }
     }
   }
 
+  $scope.calculateLabor = (labor) => {
+    http.get('api/labor')
+      .then(({data: opcodes}) => {
+        console.log("labor", opcodes)
+        for (i=0; i<opcodes.length; i++){
+          if (opcodes[i].name === labor){
+            MathFactory.setLaborSum(opcodes[i].perHour)
+          }
+        }
+      })
+  }
+
+  $scope.resetPage = () => {
+    $scope.model = ''
+    $scope.sectionsList = []
+    $scope.partsList = []
+    $scope.laborList = []
+  }
+
+  $scope.startOver = () => {
+    $scope.model = ''
+    $scope.sectionsList = []
+    $scope.partsList = []
+    $scope.laborList = []
+    $location.url('/dealer')
+  }
+
+  $scope.claimSubmit = () => {
+    let finalClaim = {
+      dealer: DataFactory.getDealer(),
+      model: car,
+      section: DataFactory.getSection(),
+      parts: $scope.parts,
+      labor: $scope.labor,
+
+    }
+
+  }
 
 })
