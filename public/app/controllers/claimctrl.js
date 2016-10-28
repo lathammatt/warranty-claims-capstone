@@ -68,12 +68,12 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
   }
 
   $scope.calculateLabor = (labor) => {
-    let opcodeArray
+    let opcodeArray = []
     let laborHours = null
     DataFactory.getLabor()
       .then((opcodes) => {
         console.log("labor", opcodes)
-        for (i=0; i<opcodes.length; i++){
+        for (let i = 0; i < opcodes.length; i++){
           if (opcodes[i].name === labor){
             opcodeArray.push(opcodes[i])
           }
@@ -82,7 +82,7 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
           for (let j = 0; j < opcodeArray[i].largeCars.length; j++) {
             if (opcodeArray[i].smallCars[j] === car) {
               console.log(opcodeArray[i].smallCars[j], car)
-              laborHours = opcodeArray[i].smallRate[j]
+              laborHours = opcodeArray[i].smallRate
               console.log("small", laborHours)
             }
           }
@@ -91,7 +91,7 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
           for (let j = 0; j < opcodeArray[i].largeCars.length; j++) {
             if (opcodeArray[i].largeCars[j] === car) {
               console.log(opcodeArray[i].largeCars[j], car)
-              laborHours = opcodeArray[i].largeRate[j]
+              laborHours = opcodeArray[i].largeRate
               console.log("large", laborHours)
             }
           }

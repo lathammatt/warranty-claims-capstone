@@ -7,6 +7,7 @@ const Dealer = require('../models/dealers')
 const Vehicle = require('../models/vehicle')
 const Sections = require('../models/sections')
 const Parts = require('../models/parts')
+const Labor = require('../models/labor')
 
 router.get('/', (req, res) => {
   res.render('index')
