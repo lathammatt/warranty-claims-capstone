@@ -1,35 +1,35 @@
 <div class="row">
 	<h2>Please confirm the claim info below
 </div>
-<div class="row" ng-repeat="item in claimObject">
+<div class="row" ng-model="claimObject">
 	<div class="row">
 		<h3> Dealer </h3>
 	</div>
 	<div class="row">
-		<h5>{{item.dealer}}</h5>
+		<h5>{{claimObject.dealer}}</h5>
 	</div>
 	<div class="row">
 		<h3> Vehicle Model </h3>
 	</div>
 	<div class="row">
-    <h5>{{item.model}}</h5>
+    <h5>{{claimObject.model}}</h5>
 	</div>
 	<div class="row">
 		<h3> Section Repaired </h3>
 	</div>
 	<div class="row">
-    <h5>{{item.section}}</h5>
+    <h5>{{claimObject.section}}</h5>
 	</div>
 	<div class="row">
 		<h3> Parts Replaced </h3>
 	</div>
 	<div class="row">
-    <h5>{{item.parts}}</h5>
+    <h5>{{claimObject.parts}}</h5>
 	</div>
 	<div class="row">
 		<h3> Labor Opcode </h3>
 	</div>
 	<div class="row">
-    <h5>{{item.labor}}</h5>
+    <h5>{{claimObject.labor}}</h5>
 	</div>
 </div>

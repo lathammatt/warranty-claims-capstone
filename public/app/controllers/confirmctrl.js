@@ -2,14 +2,12 @@
 
 app.controller("ConfirmCtrl", function($scope, DataFactory) {
 
-  // const loadClaim = () => {
-    DataFactory.getClaimDraft()
-      .then((object) => {
-        console.log("claim", object)
-        $scope.claimObject = object
-      })
-  // }
+  const loadClaim = () => {
+   $scope.claimObject = DataFactory.getClaimDraft()
 
-// loadClaim();
+
+  }
+
+loadClaim();
 
 })

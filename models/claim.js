@@ -10,5 +10,5 @@ module.exports = mongoose.model('Claim', {
   "labor": String,
   "totalParts": Number,
   "totalLabor": Number,
-  "total": Number
+  "claimTotal": Number
 })

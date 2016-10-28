@@ -1,6 +1,6 @@
 'use strict';
 
-app.factory('DataFactory', function($http, $q) {
+app.factory('DataFactory', function($http, $q, MathFactory) {
   let currentDealer = null
   let dealerRate = null
   let currentBrand = null
@@ -131,12 +131,17 @@ app.factory('DataFactory', function($http, $q) {
       model: selectModel,
       section: chosenSect,
       parts: partReplaced,
-      labor: chosenOpcode
+      labor: chosenOpcode,
+      totalParts: MathFactory.getPartSum(),
+      totalLabor: MathFactory.getLaborSum(),
+      claimTotal: MathFactory.getClaimSum()
     }
     console.log("draft", claimDraft)
+    $http.post('/api/claim', claimDraft)
   }
 
   const getClaimDraft = () => {
+    console.log("checkclaim", claimDraft)
     return claimDraft
   }
 
