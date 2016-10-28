@@ -2,34 +2,43 @@
 	<h2>Please confirm the claim info below
 </div>
 <div class="row" ng-model="claimObject">
-	<div class="row">
-		<h3> Dealer </h3>
+	<div class="row tighter">
+		<h4> Dealer </h4>
 	</div>
-	<div class="row">
-		<h5>{{claimObject.dealer}}</h5>
+	<div class="row tighter">
+		<p>{{claimObject.dealer}}</p>
 	</div>
-	<div class="row">
-		<h3> Vehicle Model </h3>
+	<div class="row tighter">
+		<h4> Vehicle Model </h4>
 	</div>
-	<div class="row">
-    <h5>{{claimObject.model}}</h5>
+	<div class="row tighter">
+		<p>{{claimObject.model}}</p>
 	</div>
-	<div class="row">
-		<h3> Section Repaired </h3>
+	<div class="row tighter">
+		<h4> Section Repaired </h4>
 	</div>
-	<div class="row">
-    <h5>{{claimObject.section}}</h5>
+	<div class="row tighter">
+		<p>{{claimObject.section}}</p>
 	</div>
-	<div class="row">
-		<h3> Parts Replaced </h3>
+	<div class="row tighter">
+		<h4> Parts Replaced </h4>
 	</div>
-	<div class="row">
-    <h5>{{claimObject.parts}}</h5>
+	<div class="row tighter">
+		<p>{{claimObject.parts}}</p>
 	</div>
-	<div class="row">
-		<h3> Labor Opcode </h3>
+	<div class="row tighter">
+		<h4> Labor Opcode </h4>
 	</div>
-	<div class="row">
-    <h5>{{claimObject.labor}}</h5>
+	<div class="row tighter">
+		<p>{{claimObject.labor}}</p>
 	</div>
+</div>
+<div class="spacer">
+
+</div>
+<div class="row">
+	<button type="submit" class="btn btn-success" ng-click="claimSubmit()">Confirmed</button>
+	<button type="submit" class="btn btn-primary" ng-click="redoClaim()">Back to Claim Options</button>
+	<button type="submit" class="btn btn-danger" ng-click="resetPage()">Back to Dealer Select</button>
+
 </div>
