@@ -94,6 +94,21 @@ app.factory('DataFactory', function($http, $q) {
     })
   }
 
+  const getLabor = () => {
+    let labor = []
+    return $q((resolve, reject) => {
+      $http.get('/api/labor')
+        .success((returnedData) => {
+          console.log("data", returnedData)
+          labor = returnedData
+          resolve(labor)
+        })
+        .error((err) => {
+          reject(err)
+        })
+    })
+  }
 
-  return { setDealer, getDealer, getDealers, setBrand, getBrand, setSection, getSections, getVehicles, getParts }
+
+  return { setDealer, getDealer, getDealers, setBrand, getBrand, setSection, getSections, getVehicles, getParts, getLabor }
 })
