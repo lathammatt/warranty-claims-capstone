@@ -24,6 +24,7 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
 
   $scope.populateSections = (vehicle) => {
     car = vehicle
+    DataFactory.setVehicle(vehicle)
     DataFactory.getSections()
       .then((sections) => {
         console.log("sections", sections)
@@ -59,6 +60,7 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
 
   $scope.populateLabor = (part) => {
     $scope.laborList = []
+    DataFactory.setPart(part)
     for (let i = 0; i < trinkets.length; i++) {
       if (trinkets[i].name === part) {
         MathFactory.setPartSum(trinkets[i].cost)
@@ -70,6 +72,7 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
   $scope.calculateLabor = (labor) => {
     let opcodeArray = []
     let laborHours = null
+    DataFactory.setOpcode(labor)
     DataFactory.getLabor()
       .then((opcodes) => {
         console.log("labor", opcodes)
@@ -96,8 +99,9 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
             }
           }
         }
-
+        MathFactory.setLaborSum(laborHours)
       })
+
   }
 
   $scope.resetPage = () => {
@@ -115,16 +119,11 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
     $location.url('/dealer')
   }
 
-  $scope.claimSubmit = () => {
-    let finalClaim = {
-      dealer: DataFactory.getDealer(),
-      model: car,
-      section: '',
-      parts: $scope.parts,
-      labor: $scope.labor,
-
+  $scope.claimConfirm = () => {
+    DataFactory.pendingClaim()
+    $location.url('/confirm')
     }
 
-  }
+
 
 })

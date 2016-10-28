@@ -19,20 +19,24 @@ app.factory('MathFactory', function() {
     return partsSum
   }
 
-  const setLaborSum = (labor) => {
+  const makeClaimSum = (cost) => {
+    claimSum = laborSum + partsSum
+  }
 
+  const setLaborSum = (labor) => {
+    laborSum = labor * laborRate
+    makeClaimSum()
+    console.log("sum", claimSum)
   }
 
   const getLaborSum = () => {
     return laborSum
   }
 
-  const setClaimSum = (cost) => {}
-
   const getClaimSum = () => {
     return claimSum
   }
 
 
-return {setRate, setPartSum, getPartSum, setLaborSum, getLaborSum, setClaimSum, getClaimSum}
+return {setRate, setPartSum, getPartSum, setLaborSum, getLaborSum, makeClaimSum, getClaimSum}
 })
