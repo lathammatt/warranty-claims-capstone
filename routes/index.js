@@ -48,7 +48,6 @@ router.get('/api/labor', (req, res, err) => {
     .catch(err)
 })
 
-
 router.post('/api/claim', ({body}, res, err) => {
   Claim
     .create(body)
