@@ -24,7 +24,6 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
     return $q((resolve, reject) => {
       $http.get('/api/dealer')
         .success((returnedData) => {
-          console.log("data", returnedData)
           dealers = returnedData
           resolve(dealers)
         })
@@ -68,7 +67,6 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
     return $q((resolve, reject) => {
       $http.get('/api/vehicles')
         .success((returnedData) => {
-          console.log("data", returnedData)
           cars = returnedData
           resolve(cars)
         })
@@ -83,7 +81,6 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
     return $q((resolve, reject) => {
       $http.get('/api/sections')
         .success((returnedData) => {
-          console.log("data", returnedData)
           sections = returnedData
           resolve(sections)
         })
@@ -98,7 +95,6 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
     return $q((resolve, reject) => {
       $http.get('/api/parts')
         .success((returnedData) => {
-          console.log("data", returnedData)
           parts = returnedData
           resolve(parts)
         })
@@ -113,7 +109,6 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
     return $q((resolve, reject) => {
       $http.get('/api/labor')
         .success((returnedData) => {
-          console.log("data", returnedData)
           labor = returnedData
           resolve(labor)
         })
@@ -136,12 +131,10 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
       totalLabor: MathFactory.getLaborSum(),
       claimTotal: MathFactory.getClaimSum()
     }
-    console.log("draft", claimDraft)
     $http.post('/api/claim', claimDraft)
   }
 
   const getClaimDraft = () => {
-    console.log("checkclaim", claimDraft)
     return claimDraft
   }
 

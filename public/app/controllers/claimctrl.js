@@ -13,9 +13,7 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
   DataFactory.getVehicles()
     .then((vehicles) => {
       wheels = vehicles
-      console.log(wheels)
       for (let i = 0; i < wheels.length; i++) {
-        console.log("check", wheels[i].name)
         if (wheels[i].brand === brand) {
           $scope.vehicleList.push(wheels[i].name)
         }
@@ -27,7 +25,6 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
     DataFactory.setVehicle(vehicle)
     DataFactory.getSections()
       .then((sections) => {
-        console.log("sections", sections)
         for (let i = 0; i < sections.length; i++) {
           $scope.sectionsList.push(sections[i].name)
         }
@@ -40,7 +37,6 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
     DataFactory.setSection(section)
     DataFactory.getParts()
       .then((parts) => {
-        console.log("parts", parts)
         trinkets = parts
         for (let i = 0; i < parts.length; i++) {
           if (parts[i].section === section) {
@@ -50,7 +46,6 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
         for (let i = 0; i < sectionMatch.length; i++) {
           for (let j = 0; j < sectionMatch[i].models.length; j++) {
             if (sectionMatch[i].models[j] === car) {
-              console.log(sectionMatch[i].models[j], car)
               $scope.partsList.push(sectionMatch[i].name)
             }
           }
@@ -75,7 +70,6 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
     DataFactory.setOpcode(labor)
     DataFactory.getLabor()
       .then((opcodes) => {
-        console.log("labor", opcodes)
         for (let i = 0; i < opcodes.length; i++){
           if (opcodes[i].name === labor){
             opcodeArray.push(opcodes[i])
@@ -84,18 +78,14 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
         for (let i = 0; i < opcodeArray.length; i++) {
           for (let j = 0; j < opcodeArray[i].largeCars.length; j++) {
             if (opcodeArray[i].smallCars[j] === car) {
-              console.log(opcodeArray[i].smallCars[j], car)
               laborHours = opcodeArray[i].smallRate
-              console.log("small", laborHours)
             }
           }
         }
         for (let i = 0; i < opcodeArray.length; i++) {
           for (let j = 0; j < opcodeArray[i].largeCars.length; j++) {
             if (opcodeArray[i].largeCars[j] === car) {
-              console.log(opcodeArray[i].largeCars[j], car)
               laborHours = opcodeArray[i].largeRate
-              console.log("large", laborHours)
             }
           }
         }
