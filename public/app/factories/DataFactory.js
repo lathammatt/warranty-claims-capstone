@@ -4,11 +4,15 @@ app.factory('DataFactory', function($http, $q) {
   let currentDealer = null
   let dealerRate = null
   let currentBrand = null
+  let selectModel = null
   let chosenSect = null
+  let partReplaced = null
+  let chosenOpcode = null
+
+
 
   const setDealer = (dealer) => {
     currentDealer = dealer
-    console.log("dealer", currentDealer)
   }
 
   const getDealer = () => {
@@ -32,7 +36,6 @@ app.factory('DataFactory', function($http, $q) {
 
   const setBrand = (brand) => {
     currentBrand = brand
-    console.log("brand", currentBrand)
   }
 
   const getBrand = () => {
@@ -41,12 +44,23 @@ app.factory('DataFactory', function($http, $q) {
 
   const setSection = (section) => {
     chosenSect = section
-    console.log("section", chosenSect)
+  }
+
+  const setPart = (part) => {
+    partReplaced = part
   }
 
   // const getSection = () => {
   //   return chosenSect
   // }
+
+  const setVehicle = (car) => {
+    selectModel = car
+  }
+
+  const setOpcode = (labor) => {
+    chosenOpcode = labor
+  }
 
 
   const getVehicles = () => {
@@ -109,6 +123,24 @@ app.factory('DataFactory', function($http, $q) {
     })
   }
 
+  let claimDraft = {}
 
-  return { setDealer, getDealer, getDealers, setBrand, getBrand, setSection, getSections, getVehicles, getParts, getLabor }
+  const pendingClaim = () => {
+    claimDraft = {
+      dealer: currentDealer,
+      model: selectModel,
+      section: chosenSect,
+      parts: partReplaced,
+      labor: chosenOpcode
+    }
+    console.log("draft", claimDraft)
+  }
+
+  const getClaimDraft = () => {
+    return claimDraft
+  }
+
+
+  return { setDealer, getDealer, getDealers, setBrand, getBrand, setSection, getSections, getVehicles, getParts, getLabor, setPart, setVehicle, setOpcode, pendingClaim, getClaimDraft }
+
 })
