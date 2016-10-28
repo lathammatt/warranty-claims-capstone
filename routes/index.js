@@ -36,7 +36,14 @@ router.get('/api/sections', (req, res, err) => {
 router.get('/api/parts', (req, res, err) => {
   Parts
     .find()
-    .then(sections => res.json(sections))
+    .then(parts => res.json(parts))
+    .catch(err)
+})
+
+router.get('/api/labor', (req, res, err) => {
+  Labor
+    .find()
+    .then(labor => res.json(labor))
     .catch(err)
 })
 
