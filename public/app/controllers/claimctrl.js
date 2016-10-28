@@ -24,8 +24,8 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
 
   $scope.populateSections = (vehicle) => {
     car = vehicle
-    $http.get('/api/sections')
-      .then(({ data: sections }) => {
+    DataFactory.getSections()
+      .then((sections) => {
         console.log("sections", sections)
         for (let i = 0; i < sections.length; i++) {
           $scope.sectionsList.push(sections[i].name)
@@ -37,8 +37,8 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
     $scope.partsList = []
     let sectionMatch = []
     DataFactory.setSection(section)
-    $http.get('/api/parts')
-      .then(({ data: parts }) => {
+    DataFactory.getParts()
+      .then((parts) => {
         console.log("parts", parts)
         trinkets = parts
         for (let i = 0; i < parts.length; i++) {
@@ -69,7 +69,7 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
 
   $scope.calculateLabor = (labor) => {
     http.get('api/labor')
-      .then(({data: opcodes}) => {
+      .then((opcodes) => {
         console.log("labor", opcodes)
         for (i=0; i<opcodes.length; i++){
           if (opcodes[i].name === labor){
@@ -98,7 +98,7 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
     let finalClaim = {
       dealer: DataFactory.getDealer(),
       model: car,
-      section: DataFactory.getSection(),
+      section: '',
       parts: $scope.parts,
       labor: $scope.labor,
 

@@ -44,9 +44,9 @@ app.factory('DataFactory', function($http, $q) {
     console.log("section", chosenSect)
   }
 
-  const getSection = () => {
-    return chosenSect
-  }
+  // const getSection = () => {
+  //   return chosenSect
+  // }
 
 
   const getVehicles = () => {
@@ -64,6 +64,36 @@ app.factory('DataFactory', function($http, $q) {
     })
   }
 
+  const getSections = () => {
+    let sections = []
+    return $q((resolve, reject) => {
+      $http.get('/api/sections')
+        .success((returnedData) => {
+          console.log("data", returnedData)
+          sections = returnedData
+          resolve(sections)
+        })
+        .error((err) => {
+          reject(err)
+        })
+    })
+  }
 
-  return { setDealer, getDealer, getDealers, setBrand, getBrand, setSection, getSection, getVehicles}
+  const getParts = () => {
+    let parts = []
+    return $q((resolve, reject) => {
+      $http.get('/api/parts')
+        .success((returnedData) => {
+          console.log("data", returnedData)
+          parts = returnedData
+          resolve(parts)
+        })
+        .error((err) => {
+          reject(err)
+        })
+    })
+  }
+
+
+  return { setDealer, getDealer, getDealers, setBrand, getBrand, setSection, getSections, getVehicles, getParts }
 })
