@@ -8,7 +8,6 @@ app.factory('MathFactory', function() {
 
   const setRate = (rate) => {
     laborRate = rate
-    console.log("rate", rate)
   }
 
   const setPartSum = (cost) => {
@@ -26,7 +25,6 @@ app.factory('MathFactory', function() {
   const setLaborSum = (labor) => {
     laborSum = labor * laborRate
     makeClaimSum()
-    console.log("sum", claimSum)
   }
 
   const getLaborSum = () => {

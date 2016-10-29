@@ -141,12 +141,10 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
       totalLabor: MathFactory.getLaborSum(),
       claimTotal: MathFactory.getClaimSum()
     }
-    console.log("draft", claimDraft)
     $http.post('/api/claim', claimDraft)
   }
 
   const getClaimDraft = () => {
-    console.log("checkclaim", claimDraft)
     return claimDraft
   }
 
