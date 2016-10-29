@@ -7,7 +7,7 @@ app.controller("DealerCtrl", function($scope, $http, DataFactory, $location, Mat
 
   DataFactory.getDealers()
     .then((object) => {
-      shops = object
+      shops = object.data
     })
 
   $scope.brandSelect = (brand) => {
