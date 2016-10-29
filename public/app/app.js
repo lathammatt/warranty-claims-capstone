@@ -16,5 +16,9 @@ app.config(function($routeProvider) {
       templateUrl: 'app/views/partials/confirm.html',
       controller: 'ConfirmCtrl'
     })
+    .when('/results', {
+      templateUrl: 'app/views/partials/results.html',
+      controller: 'ResultsCtrl'
+    })
     .otherwise('/')
 })

@@ -14,7 +14,6 @@ app.controller("DealerCtrl", function($scope, $http, DataFactory, $location, Mat
     DataFactory.setDealer(null)
     $scope.dealerList = []
     selection = brand
-
     for (let i = 0; i < shops.length; i++) {
       if (shops[i].brand === selection) {
         $scope.dealerList.push(shops[i].name)

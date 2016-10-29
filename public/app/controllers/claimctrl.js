@@ -25,8 +25,8 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
     DataFactory.setVehicle(vehicle)
     DataFactory.getSections()
       .then((sections) => {
-        for (let i = 0; i < sections.length; i++) {
-          $scope.sectionsList.push(sections[i].name)
+        for (let i = 0; i < sections.data.length; i++) {
+          $scope.sectionsList.push(sections.data[i].name)
         }
       })
   }
@@ -38,9 +38,9 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
     DataFactory.getParts()
       .then((parts) => {
         trinkets = parts.data
-        for (let i = 0; i < parts.length; i++) {
-          if (parts[i].section === section) {
-            sectionMatch.push(parts[i])
+        for (let i = 0; i < parts.data.length; i++) {
+          if (parts.data[i].section === section) {
+            sectionMatch.push(parts.data[i])
           }
         }
         for (let i = 0; i < sectionMatch.length; i++) {
@@ -70,7 +70,6 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
     DataFactory.setOpcode(labor)
     DataFactory.getLabor()
       .then((opcodes) => {
-        console.log("labor", opcodes)
         for (let i = 0; i < opcodes.data.length; i++){
           if (opcodes.data[i].name === labor){
             opcodeArray.push(opcodes.data[i])
