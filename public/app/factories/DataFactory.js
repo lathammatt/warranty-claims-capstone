@@ -20,18 +20,19 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
   }
 
   const getDealers = () => {
-    let dealers = []
-    return $q((resolve, reject) => {
-      $http.get('/api/dealer')
-        .success((returnedData) => {
-          console.log("data", returnedData)
-          dealers = returnedData
-          resolve(dealers)
-        })
-        .error((err) => {
-          reject(err)
-        })
-    })
+    // let dealers = []
+    return $http.get('/api/dealer')
+    // $q((resolve, reject) => {
+    //   $http.get('/api/dealer')
+    //     .success((returnedData) => {
+    //       console.log("data", returnedData)
+    //       dealers = returnedData
+    //       resolve(dealers)
+    //     })
+    //     .error((err) => {
+    //       reject(err)
+    //     })
+    // })
   }
 
   const setBrand = (brand) => {
@@ -64,63 +65,67 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
 
 
   const getVehicles = () => {
-    let cars = []
-    return $q((resolve, reject) => {
-      $http.get('/api/vehicles')
-        .success((returnedData) => {
-          console.log("data", returnedData)
-          cars = returnedData
-          resolve(cars)
-        })
-        .error((err) => {
-          reject(err)
-        })
-    })
+    // let cars = []
+    return $http.get('/api/vehicles')
+    // $q((resolve, reject) => {
+    //   $http.get('/api/vehicles')
+    //     .success((returnedData) => {
+    //       console.log("data", returnedData)
+    //       cars = returnedData
+    //       resolve(cars)
+    //     })
+    //     .error((err) => {
+    //       reject(err)
+    //     })
+    // })
   }
 
   const getSections = () => {
-    let sections = []
-    return $q((resolve, reject) => {
-      $http.get('/api/sections')
-        .success((returnedData) => {
-          console.log("data", returnedData)
-          sections = returnedData
-          resolve(sections)
-        })
-        .error((err) => {
-          reject(err)
-        })
-    })
+    // let sections = []
+    return $http.get('/api/sections')
+    // $q((resolve, reject) => {
+    //   $http.get('/api/sections')
+    //     .success((returnedData) => {
+    //       console.log("data", returnedData)
+    //       sections = returnedData
+    //       resolve(sections)
+    //     })
+    //     .error((err) => {
+    //       reject(err)
+    //     })
+    // })
   }
 
   const getParts = () => {
-    let parts = []
-    return $q((resolve, reject) => {
-      $http.get('/api/parts')
-        .success((returnedData) => {
-          console.log("data", returnedData)
-          parts = returnedData
-          resolve(parts)
-        })
-        .error((err) => {
-          reject(err)
-        })
-    })
+    // let parts = []
+    return $http.get('/api/parts')
+    // $q((resolve, reject) => {
+    //   $http.get('/api/parts')
+    //     .success((returnedData) => {
+    //       console.log("data", returnedData)
+    //       parts = returnedData
+    //       resolve(parts)
+    //     })
+    //     .error((err) => {
+    //       reject(err)
+    //     })
+    // })
   }
 
   const getLabor = () => {
-    let labor = []
-    return $q((resolve, reject) => {
-      $http.get('/api/labor')
-        .success((returnedData) => {
-          console.log("data", returnedData)
-          labor = returnedData
-          resolve(labor)
-        })
-        .error((err) => {
-          reject(err)
-        })
-    })
+    // let labor = []
+    return $http.get('/api/labor')
+    // $q((resolve, reject) => {
+    //   $http.get('/api/labor')
+    //     .success((returnedData) => {
+    //       console.log("data", returnedData)
+    //       labor = returnedData
+    //       resolve(labor)
+    //     })
+    //     .error((err) => {
+    //       reject(err)
+    //     })
+    // })
   }
 
   let claimDraft = {}

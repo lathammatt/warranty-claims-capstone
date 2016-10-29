@@ -12,7 +12,7 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
 
   DataFactory.getVehicles()
     .then((vehicles) => {
-      wheels = vehicles
+      wheels = vehicles.data
       console.log(wheels)
       for (let i = 0; i < wheels.length; i++) {
         console.log("check", wheels[i].name)
@@ -41,7 +41,7 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
     DataFactory.getParts()
       .then((parts) => {
         console.log("parts", parts)
-        trinkets = parts
+        trinkets = parts.data
         for (let i = 0; i < parts.length; i++) {
           if (parts[i].section === section) {
             sectionMatch.push(parts[i])
@@ -76,9 +76,9 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
     DataFactory.getLabor()
       .then((opcodes) => {
         console.log("labor", opcodes)
-        for (let i = 0; i < opcodes.length; i++){
-          if (opcodes[i].name === labor){
-            opcodeArray.push(opcodes[i])
+        for (let i = 0; i < opcodes.data.length; i++){
+          if (opcodes.data[i].name === labor){
+            opcodeArray.push(opcodes.data[i])
           }
         }
         for (let i = 0; i < opcodeArray.length; i++) {

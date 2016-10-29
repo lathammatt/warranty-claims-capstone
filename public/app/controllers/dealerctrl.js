@@ -8,7 +8,7 @@ app.controller("DealerCtrl", function($scope, $http, DataFactory, $location, Mat
   DataFactory.getDealers()
     .then((object) => {
       console.log("dealers", object)
-      shops = object
+      shops = object.data
       console.log(shops)
     })
 
