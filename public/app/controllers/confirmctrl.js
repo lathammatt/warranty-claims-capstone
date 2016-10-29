@@ -9,15 +9,18 @@ app.controller("ConfirmCtrl", function($scope, DataFactory, $location) {
   loadClaim();
 
 $scope.claimSubmit = () => {
-  //proceed to totals and all claims
+  DataFactory.postClaim()
+  $location.url('/results')
 }
 
 $scope.redoClaim = () => {
-  //delete claim and return to claim page, keep brand and dealer
+  DataFactory.redoRepair()
+  $location.url('/claim')
 }
 
 $scope.resetPage = () => {
-  //delete claim, return to dealer page, clear all
+  DataFactory.restartClaim()
+  $location.url('/dealer')
 }
 
 

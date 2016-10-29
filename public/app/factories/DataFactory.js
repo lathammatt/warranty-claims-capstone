@@ -20,19 +20,7 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
   }
 
   const getDealers = () => {
-    // let dealers = []
     return $http.get('/api/dealer')
-    // $q((resolve, reject) => {
-    //   $http.get('/api/dealer')
-    //     .success((returnedData) => {
-    //       console.log("data", returnedData)
-    //       dealers = returnedData
-    //       resolve(dealers)
-    //     })
-    //     .error((err) => {
-    //       reject(err)
-    //     })
-    // })
   }
 
   const setBrand = (brand) => {
@@ -51,10 +39,6 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
     partReplaced = part
   }
 
-  // const getSection = () => {
-  //   return chosenSect
-  // }
-
   const setVehicle = (car) => {
     selectModel = car
   }
@@ -65,67 +49,19 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
 
 
   const getVehicles = () => {
-    // let cars = []
     return $http.get('/api/vehicles')
-    // $q((resolve, reject) => {
-    //   $http.get('/api/vehicles')
-    //     .success((returnedData) => {
-    //       console.log("data", returnedData)
-    //       cars = returnedData
-    //       resolve(cars)
-    //     })
-    //     .error((err) => {
-    //       reject(err)
-    //     })
-    // })
   }
 
   const getSections = () => {
-    // let sections = []
     return $http.get('/api/sections')
-    // $q((resolve, reject) => {
-    //   $http.get('/api/sections')
-    //     .success((returnedData) => {
-    //       console.log("data", returnedData)
-    //       sections = returnedData
-    //       resolve(sections)
-    //     })
-    //     .error((err) => {
-    //       reject(err)
-    //     })
-    // })
   }
 
   const getParts = () => {
-    // let parts = []
     return $http.get('/api/parts')
-    // $q((resolve, reject) => {
-    //   $http.get('/api/parts')
-    //     .success((returnedData) => {
-    //       console.log("data", returnedData)
-    //       parts = returnedData
-    //       resolve(parts)
-    //     })
-    //     .error((err) => {
-    //       reject(err)
-    //     })
-    // })
   }
 
   const getLabor = () => {
-    // let labor = []
     return $http.get('/api/labor')
-    // $q((resolve, reject) => {
-    //   $http.get('/api/labor')
-    //     .success((returnedData) => {
-    //       console.log("data", returnedData)
-    //       labor = returnedData
-    //       resolve(labor)
-    //     })
-    //     .error((err) => {
-    //       reject(err)
-    //     })
-    // })
   }
 
   let claimDraft = {}
@@ -141,14 +77,38 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
       totalLabor: MathFactory.getLaborSum(),
       claimTotal: MathFactory.getClaimSum()
     }
-    $http.post('/api/claim', claimDraft)
   }
 
   const getClaimDraft = () => {
     return claimDraft
   }
 
+  const postClaim = () => {
+    $http.post('/api/claim', claimDraft)
+  }
 
-  return { setDealer, getDealer, getDealers, setBrand, getBrand, setSection, getSections, getVehicles, getParts, getLabor, setPart, setVehicle, setOpcode, pendingClaim, getClaimDraft }
+  const redoRepair = () => {
+    claimDraft = {}
+    selectModel = null
+    chosenSect = null
+    partReplaced = null
+    chosenOpcode = null
+    console.log("redoRepair", claimDraft)
+  }
+
+  const restartClaim = () => {
+    claimDraft = {}
+    currentDealer = null
+    dealerRate = null
+    currentBrand = null
+    selectModel = null
+    chosenSect = null
+    partReplaced = null
+    chosenOpcode = null
+  }
+
+
+
+  return { setDealer, getDealer, getDealers, setBrand, getBrand, setSection, getSections, getVehicles, getParts, getLabor, setPart, setVehicle, setOpcode, pendingClaim, getClaimDraft, postClaim, redoRepair, restartClaim }
 
 })
