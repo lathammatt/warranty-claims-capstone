@@ -1,3 +1,29 @@
 <div class="row">
-  Claim
+  Claim submitted!
+</div>
+<div class="row" ng-model="finalClaim">
+	<div class="row tighter">
+		<h4> Dealer: {{finalClaim.dealer}}</h4>
+	</div>
+	<div class="row tighter">
+		<h4> Rate: ${{finalClaim.rate}} per hour</h4>
+	</div>
+	<div class="row tighter">
+		<h4> Parts Total: ${{finalClaim.totalParts}}</h4>
+	</div>
+	<div class="row tighter">
+		<h4> Labor Total: ${{finalClaim.totalLabor}}</h4>
+	</div>
+	<div class="row">
+		<h4> Claim Total:  </h4>
+	</div>
+	<div class="row tighter">
+		<p>{{finalClaim.parts}}</p>
+	</div>
+	<div class="row tighter">
+		<h4> Labor Opcode </h4>
+	</div>
+	<div class="row tighter">
+		<p>{{finalClaim.labor}}</p>
+	</div>
 </div>
