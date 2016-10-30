@@ -1,7 +1,6 @@
 [
   {
-    "name": "AA20AA",
-    "description": "Replace Long Block",
+    "name": "AA20AA Replace Long Block",
     "smallRate": 8.0,
     "largeRate": 10.0,
     "smallCars": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"],

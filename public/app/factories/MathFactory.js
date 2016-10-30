@@ -1,13 +1,13 @@
 'use strict';
 
 app.factory('MathFactory', function() {
-  let laborRate = null
+  let dealerRate = null
   let laborSum = null
   let partsSum = null
   let claimSum = null
 
   const setRate = (rate) => {
-    laborRate = rate
+    dealerRate = rate
   }
 
   const setPartSum = (cost) => {
@@ -23,7 +23,7 @@ app.factory('MathFactory', function() {
   }
 
   const setLaborSum = (labor) => {
-    laborSum = labor * laborRate
+    laborSum = labor * dealerRate
     makeClaimSum()
   }
 
