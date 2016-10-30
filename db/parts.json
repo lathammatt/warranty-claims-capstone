@@ -3,8 +3,7 @@
     "name": "Long Block V6",
     "cost": 12000,
     "section": "Engine",
-    "labor": "AA20AA",
-    "description": "Replace Long Block",
+    "labor": "AA20AA Replace Long Block",
     "models": [
       "Frontier",
       "Titan",
@@ -23,8 +22,7 @@
     "name": "Short Block V6",
     "cost": 8000,
     "section": "Engine",
-    "labor": "AA30AA",
-    "description": "Replace Short Block",
+    "labor": "AA30AA Replace Short Block",
     "models": [
       "Frontier",
       "Titan",
@@ -43,8 +41,7 @@
     "name": "Long Block 4-Cyl",
     "cost": 7000,
     "section": "Engine",
-    "labor": "AA20AA",
-    "description": "Replace Long Block",
+    "labor": "AA20AA Replace Long Block",
     "models": [
       "Sentra",
       "Altima",
@@ -59,7 +56,7 @@
     "name": "Short Block 4-Cyl",
     "cost": 5000,
     "section": "Engine",
-    "labor": "AA30AA",
+    "labor": "AA30AA Replace Short Block",
     "models": [
       "Sentra",
       "Altima",
@@ -74,7 +71,7 @@
     "name": "4-Cyl Cylinder Head",
     "cost": 1800,
     "section": "Engine",
-    "labor": "CD10AA",
+    "labor": "CD10AA Replace Cylinder Head",
     "models": [
       "Sentra",
       "Altima",
@@ -89,7 +86,7 @@
     "name": "V6 Cylinder Head",
     "cost": 2800,
     "section": "Engine",
-    "labor": "CD10AA",
+    "labor": "CD10AA Replace Cylinder Head",
     "models": [
       "Frontier",
       "Titan",
@@ -109,6 +106,7 @@
     "cost": 150,
     "section": "Engine",
     "labor": "CD20AA",
+    "description": "Replace Cylinder Head",
     "models": [
       "Sentra",
       "Altima",
@@ -124,6 +122,7 @@
     "cost": 250,
     "section": "Engine",
     "labor": "CD20AA",
+    "description": "Replace Large Piston",
     "models": [
       "Frontier",
       "Titan",
@@ -142,7 +141,7 @@
     "name": "Large Cylinder Head Gasket",
     "cost": 175,
     "section": "Engine",
-    "labor": "CD30AA",
+    "labor": "CD30AA Replace Head Gasket",
     "models": [
       "Frontier",
       "Titan",
@@ -161,7 +160,7 @@
     "name": "Small Cylinder Head Gasket",
     "cost": 125,
     "section": "Engine",
-    "labor": "CD30AA",
+    "labor": "CD30AA Replace Head Gasket",
     "models": [
       "Sentra",
       "Altima",
@@ -176,7 +175,7 @@
     "name": "4-Cyl Timing Chain Cover",
     "cost": 300,
     "section": "Engine",
-    "labor": "CD40AA",
+    "labor": "CD40AA Replace Outer Cover",
     "models": [
       "Sentra",
       "Altima",
@@ -191,7 +190,7 @@
     "name": "V6 Timing Chain Cover",
     "cost": 350,
     "section": "Engine",
-    "labor": "CD40AA",
+    "labor": "CD40AA Replace Outer Cover",
     "models": [
       "Frontier",
       "Titan",
@@ -210,7 +209,7 @@
     "name": "4-Cyl Crankshaft",
     "cost": 500,
     "section": "Engine",
-    "labor": "CD45AA",
+    "labor": "CD45AA Replace Crankshaft",
     "models": [
       "Sentra",
       "Altima",
@@ -225,7 +224,7 @@
     "name": "V6 Crankshaft",
     "cost": 600,
     "section": "Engine",
-    "labor": "CD45AA",
+    "labor": "CD45AA Replace Crankshaft",
     "models": [
       "Frontier",
       "Titan",
@@ -244,7 +243,7 @@
     "name": "Small Camshaft",
     "cost": 250,
     "section": "Engine",
-    "labor": "CD35AA",
+    "labor": "CD35AA Replace Camshaft",
     "models": [
       "Sentra",
       "Altima",
@@ -259,7 +258,7 @@
     "name": "Large Camshaft",
     "cost": 275,
     "section": "Engine",
-    "labor": "CD35AA",
+    "labor": "CD35AA Replace Camshaft",
     "models": [
       "Frontier",
       "Titan",
@@ -278,7 +277,7 @@
     "name": "Large Right Exhaust Manifold",
     "cost": 450,
     "section": "Engine",
-    "labor": "AT40AA",
+    "labor": "AT40AA Replace Manifold",
     "models": [
       "Frontier",
       "Titan",
@@ -297,7 +296,7 @@
     "name": "Large Left Exhaust Manifold",
     "cost": 450,
     "section": "Engine",
-    "labor": "AT41AA",
+    "labor": "AT41AA Replace Manifold",
     "models": [
       "Frontier",
       "Titan",
@@ -316,7 +315,7 @@
     "name": "Small Right Exhaust Manifold",
     "cost": 375,
     "section": "Engine",
-    "labor": "AT40AA",
+    "labor": "AT40AA Replace Manifold",
     "models": [
       "Sentra",
       "Altima",
@@ -331,7 +330,7 @@
     "name": "Small Left Exhaust Manifold",
     "cost": 375,
     "section": "Engine",
-    "labor": "AT41AA",
+    "labor": "AT41AA Replace Manifold",
     "models": [
       "Sentra",
       "Altima",
@@ -346,7 +345,7 @@
     "name": "Front Engine Mount",
     "cost": 175,
     "section": "Engine",
-    "labor": "AT20AA",
+    "labor": "AT20AA Replace Engine Mount",
     "models": [
       "Sentra",
       "Altima",
@@ -372,7 +371,7 @@
     "name": "Rear Engine Mount",
     "cost": 175,
     "section": "Engine",
-    "labor": "AT20AA",
+    "labor": "AT20AA Replace Engine Mount",
     "models": [
       "Sentra",
       "Altima",
@@ -398,7 +397,7 @@
     "name": "Right Engine Mount",
     "cost": 175,
     "section": "Engine",
-    "labor": "AT20AA",
+    "labor": "AT20AA Replace Engine Mount",
     "models": [
       "Sentra",
       "Altima",
@@ -424,7 +423,7 @@
     "name": "Left Engine Mount",
     "cost": 175,
     "section": "Engine",
-    "labor": "AT20AA",
+    "labor": "AT20AA Replace Engine Mount",
     "models": [
       "Sentra",
       "Altima",
@@ -450,7 +449,7 @@
     "name": "CVT Transmission",
     "cost": 9000,
     "section": "Transmission",
-    "labor": "LD40AA",
+    "labor": "JD40AA Replace CVT",
     "models": [
       "Sentra",
       "Altima",
@@ -460,6 +459,90 @@
       "Q50",
       "Q60",
       "Murano"
+    ]
+  },
+  {
+    "name": "Auto Transmission",
+    "cost": 5000,
+    "section": "Transmission",
+    "labor": "JA30AA Replace Transmission",
+    "models": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "Manual Transmission",
+    "cost": 6000,
+    "section": "Transmission",
+    "labor": "HK30AA Replace Transmission",
+    "models": [
+      "Sentra",
+      "Frontier",
+      "370Z",
+      "Q70",
+      "QX30",
+      "QX80"
+    ]
+  },
+  {
+    "name": "Torque Converter",
+    "cost": 1500,
+    "section": "Transmission",
+    "labor": "JA45AA Replace Torque Converter",
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60",
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "Clutch Cylinder",
+    "cost": 6500,
+    "section": "Transmission",
+    "labor": "HK10AA Replace Clutch Cylinder",
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60",
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
     ]
   }
 ]
