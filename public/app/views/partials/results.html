@@ -1,5 +1,5 @@
 <div class="row">
-  Claim submitted!
+	<h3>Claim submitted!</h3>
 </div>
 <div class="row" ng-model="finalClaim">
 	<div class="row tighter">
@@ -14,16 +14,12 @@
 	<div class="row tighter">
 		<h4> Labor Total: ${{finalClaim.totalLabor}}</h4>
 	</div>
+  <!--<div class="spacer"></div>-->
 	<div class="row">
-		<h4> Claim Total:  </h4>
+		<h3> Claim Total: ${{finalClaim.claimTotal}} </h3>
 	</div>
-	<div class="row tighter">
-		<p>{{finalClaim.parts}}</p>
-	</div>
-	<div class="row tighter">
-		<h4> Labor Opcode </h4>
-	</div>
-	<div class="row tighter">
-		<p>{{finalClaim.labor}}</p>
-	</div>
+</div>
+<div class="spacer"></div>
+<div class="row">
+	<h3>History</h3>
 </div>

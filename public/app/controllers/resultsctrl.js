@@ -6,7 +6,7 @@ app.controller('ResultsCtrl', function($scope, DataFactory){
   $scope.finalClaim = DataFactory.getClaimDraft()
   }
 
-  loadCLaim()
+  loadClaim()
 
 
 
