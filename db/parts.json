@@ -4,174 +4,462 @@
     "cost": 12000,
     "section": "Engine",
     "labor": "AA20AA",
-    "models": ["Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "description": "Replace Long Block",
+    "models": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   },
   {
     "name": "Short Block V6",
     "cost": 8000,
     "section": "Engine",
     "labor": "AA30AA",
-    "models": ["Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "description": "Replace Short Block",
+    "models": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   },
   {
     "name": "Long Block 4-Cyl",
     "cost": 7000,
     "section": "Engine",
     "labor": "AA20AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"]
+    "description": "Replace Long Block",
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ]
   },
   {
     "name": "Short Block 4-Cyl",
     "cost": 5000,
     "section": "Engine",
     "labor": "AA30AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"]
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ]
   },
   {
     "name": "4-Cyl Cylinder Head",
     "cost": 1800,
     "section": "Engine",
     "labor": "CD10AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"]
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ]
   },
   {
     "name": "V6 Cylinder Head",
     "cost": 2800,
     "section": "Engine",
     "labor": "CD10AA",
-    "models": ["Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "models": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   },
   {
     "name": "Small Piston",
     "cost": 150,
     "section": "Engine",
     "labor": "CD20AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"]
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ]
   },
   {
     "name": "Large Piston",
     "cost": 250,
     "section": "Engine",
     "labor": "CD20AA",
-    "models": ["Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "models": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   },
   {
     "name": "Large Cylinder Head Gasket",
     "cost": 175,
     "section": "Engine",
     "labor": "CD30AA",
-    "models": ["Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "models": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   },
   {
     "name": "Small Cylinder Head Gasket",
     "cost": 125,
     "section": "Engine",
     "labor": "CD30AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"]
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ]
   },
   {
     "name": "4-Cyl Timing Chain Cover",
     "cost": 300,
     "section": "Engine",
     "labor": "CD40AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"]
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ]
   },
   {
     "name": "V6 Timing Chain Cover",
     "cost": 350,
     "section": "Engine",
     "labor": "CD40AA",
-    "models": ["Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "models": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   },
   {
     "name": "4-Cyl Crankshaft",
     "cost": 500,
     "section": "Engine",
     "labor": "CD45AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"]
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ]
   },
   {
     "name": "V6 Crankshaft",
     "cost": 600,
     "section": "Engine",
     "labor": "CD45AA",
-    "models": ["Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "models": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   },
   {
     "name": "Small Camshaft",
     "cost": 250,
     "section": "Engine",
     "labor": "CD35AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"]
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ]
   },
   {
     "name": "Large Camshaft",
     "cost": 275,
     "section": "Engine",
     "labor": "CD35AA",
-    "models": ["Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "models": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   },
   {
     "name": "Large Right Exhaust Manifold",
     "cost": 450,
     "section": "Engine",
     "labor": "AT40AA",
-    "models": ["Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "models": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   },
   {
     "name": "Large Left Exhaust Manifold",
     "cost": 450,
     "section": "Engine",
     "labor": "AT41AA",
-    "models": ["Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "models": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   },
   {
     "name": "Small Right Exhaust Manifold",
     "cost": 375,
     "section": "Engine",
     "labor": "AT40AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"]
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ]
   },
   {
     "name": "Small Left Exhaust Manifold",
     "cost": 375,
     "section": "Engine",
     "labor": "AT41AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"]
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ]
   },
   {
     "name": "Front Engine Mount",
     "cost": 175,
     "section": "Engine",
     "labor": "AT20AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60", "Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60",
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   },
   {
     "name": "Rear Engine Mount",
     "cost": 175,
     "section": "Engine",
     "labor": "AT20AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60", "Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60",
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   },
   {
     "name": "Right Engine Mount",
     "cost": 175,
     "section": "Engine",
     "labor": "AT20AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60", "Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60",
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   },
   {
     "name": "Left Engine Mount",
     "cost": 175,
     "section": "Engine",
     "labor": "AT20AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60", "Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60",
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   },
   {
     "name": "CVT Transmission",
     "cost": 9000,
     "section": "Transmission",
     "labor": "LD40AA",
-    "models": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60", "Murano"]
+    "models": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60",
+      "Murano"
+    ]
   }
 ]

@@ -7,6 +7,7 @@ module.exports = mongoose.model('Parts', {
   cost: Number,
   section: String,
   labor: String,
+  description: String,
   models: Array
 })
 
