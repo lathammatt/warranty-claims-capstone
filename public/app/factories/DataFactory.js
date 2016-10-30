@@ -2,7 +2,6 @@
 
 app.factory('DataFactory', function($http, $q, MathFactory) {
   let currentDealer = null
-  let dealerRate = null
   let currentBrand = null
   let selectModel = null
   let chosenSect = null
@@ -99,7 +98,6 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
   const restartClaim = () => {
     claimDraft = {}
     currentDealer = null
-    dealerRate = null
     currentBrand = null
     selectModel = null
     chosenSect = null
