@@ -2,12 +2,17 @@
 
 app.factory('MathFactory', function() {
   let dealerRate = null
+  let opcodeHours = null
   let laborSum = null
   let partsSum = null
   let claimSum = null
 
   const setRate = (rate) => {
     dealerRate = rate
+  }
+
+  const getRate = (rate) => {
+    return dealerRate
   }
 
   const setPartSum = (cost) => {
@@ -23,7 +28,8 @@ app.factory('MathFactory', function() {
   }
 
   const setLaborSum = (labor) => {
-    laborSum = labor * dealerRate
+    opcodeHours = labor
+    laborSum = opcodeHours * dealerRate
     makeClaimSum()
   }
 
@@ -35,6 +41,10 @@ app.factory('MathFactory', function() {
     return claimSum
   }
 
+  const getLaborHours = () => {
+    return opcodeHours
+  }
 
-return {setRate, setPartSum, getPartSum, setLaborSum, getLaborSum, makeClaimSum, getClaimSum}
+
+return {setRate, getRate, setPartSum, getPartSum, setLaborSum, getLaborSum, makeClaimSum, getClaimSum, getLaborHours}
 })

@@ -46,7 +46,6 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
     chosenOpcode = labor
   }
 
-
   const getVehicles = () => {
     return $http.get('/api/vehicles')
   }
@@ -68,10 +67,12 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
   const pendingClaim = () => {
     claimDraft = {
       dealer: currentDealer,
+      rate: MathFactory.getRate(),
       model: selectModel,
       section: chosenSect,
       parts: partReplaced,
       labor: chosenOpcode,
+      laborHours: MathFactory.getLaborHours(),
       totalParts: MathFactory.getPartSum(),
       totalLabor: MathFactory.getLaborSum(),
       claimTotal: MathFactory.getClaimSum()
