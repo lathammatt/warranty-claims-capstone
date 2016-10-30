@@ -3,7 +3,648 @@
     "name": "AA20AA Replace Long Block",
     "smallRate": 8.0,
     "largeRate": 10.0,
-    "smallCars": ["Sentra", "Altima", "Maxima", "Rogue", "Q30", "Q50", "Q60"],
-    "largeCars":  ["Frontier", "Titan", "Armada", "370Z", "Murano", "Q70", "QX30", "QX50", "QX60", "QX70", "QX80"]
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "AA30AA Replace Short Block",
+    "smallRate": 10.0,
+    "largeRate": 13.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "CD10AA Replace Cylinder Head",
+    "smallRate": 8.0,
+    "largeRate": 9.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "CD10AA Replace Cylinder Head",
+    "smallRate": 8.0,
+    "largeRate": 9.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "CD12AA Replace Piston",
+    "smallRate": 5.0,
+    "largeRate": 6.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "CD30AA Replace Head Gasket",
+    "smallRate": 8.0,
+    "largeRate": 9.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "CD40AA Replace Outer Cover",
+    "smallRate": 6.0,
+    "largeRate": 7.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "CD45AA Replace Crankshaft",
+    "smallRate": 8.0,
+    "largeRate": 9.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "CD11AA Replace Radiator",
+    "smallRate": 6.0,
+    "largeRate": 8.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "CD35AA Replace Camshaft",
+    "smallRate": 4.5,
+    "largeRate": 6.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "AT40AA Replace Manifold",
+    "smallRate": 4.0,
+    "largeRate": 6.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "AT41AA Replace Manifold",
+    "smallRate": 4.0,
+    "largeRate": 6.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "AT20AA Replace Engine Mount",
+    "smallRate": 0.8,
+    "largeRate": 1.3,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "JD40AA Replace CVT",
+    "smallRate": 7.5,
+    "largeRate": 8.5,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "JA30AA Replace Transmission",
+    "smallRate": 6.5,
+    "largeRate": 8.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "HK30AA Replace Transmission",
+    "smallRate": 7.5,
+    "largeRate": 9.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "JA45AA Replace Torque Converter",
+    "smallRate": 4.0,
+    "largeRate": 4.5,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "HK10AA Replace Clutch Cylinder",
+    "smallRate": 3.0,
+    "largeRate": 4.5,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "RA9999 Replace Main Harness",
+    "smallRate": 8.0,
+    "largeRate": 10.5,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "DE30AA Replace Engine Harness",
+    "smallRate": 6.0,
+    "largeRate": 7.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "RA10AA Replace Battery",
+    "smallRate": 1.0,
+    "largeRate": 1.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "DE12AA Replace Starter",
+    "smallRate": 1.0,
+    "largeRate": 1.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "RE12AA Replace Headlight",
+    "smallRate": 1.0,
+    "largeRate": 1.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "RE13AA Replace TailLight",
+    "smallRate": 1.0,
+    "largeRate": 1.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   }
 ]
