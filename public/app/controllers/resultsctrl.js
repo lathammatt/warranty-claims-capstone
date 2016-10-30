@@ -1,3 +1,6 @@
 'use strict';
 
-app.controller('ResultsCtrl', function(
+app.controller('ResultsCtrl', function(){
+
+
+}
