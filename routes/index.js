@@ -57,7 +57,7 @@ router.post('/api/claim', (req, res, err) => {
 
 router.get('/api/claims', (req, res, err) => {
   Claim
-    .find()
+    .find().sort({_id:-1})
     .then(claim => res.json(claim))
     .catch(err)
 })
