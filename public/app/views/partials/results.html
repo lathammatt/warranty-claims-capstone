@@ -1,36 +1,42 @@
-<div class="row" ng-model="finalClaim">
+<div class="row" ng-model="presentClaim">
 	<div class="col-md-6">
 		<div class="row">
-			<h3>Claim</h3>
+			<h3>Claim {{presentClaim.id}}</h3>
 		</div>
 		<div class="row tighter">
-			<h4>Dealer: {{finalClaim.dealer}}</h4>
+			<h4>Dealer: {{presentClaim.dealer}}</h4>
 		</div>
 		<div class="row tighter">
-			<h4>Rate: ${{finalClaim.rate}} per hour</h4>
+			<p>Rate: ${{presentClaim.rate}} per hour</p>
 		</div>
 		<div class="row tighter">
-			<h4>Parts Total: ${{finalClaim.totalParts}}</h4>
+			<h4>Parts:</h4>
 		</div>
 		<div class="row tighter">
-			<h4>Labor Total: ${{finalClaim.totalLabor}}</h4>
+			<p>{{presentClaim.parts}} for ${{presentClaim.totalParts}}</p>
+		</div>
+		<div class="row tighter">
+			<h4>Labor</h4>
+		</div>
+		<div class="row tighter">
+			<p>{{presentClaim.labor}}, {{presentClaim.laborHours}} hours for ${{presentClaim.totalLabor}}</p>
 		</div>
 		<!--<div class="spacer"></div>-->
 		<div class="row">
-			<h3>Claim Total: ${{finalClaim.claimTotal}}</h3>
+			<h3>Claim Total: ${{presentClaim.claimTotal}}</h3>
 		</div>
 	</div>
 	<!--<div class="spacer"></div>-->
 	<div class="col-md-6">
     <div ng-model="dealerTotal">
-      {{dealerTotal}}
+      <h3>Dealer Claims Total: ${{dealerTotal}}</h3>
     </div>
     <div class="row">
-		<h3>History</h3>
+	  	<h3>History</h3>
     </div>
   <div class="row" ng-repeat="claim in claimsList">
     <ul>
-      <li><a href="">{{claim}}</a></li>
+      <li><a ng-click="viewClaim(claim)">{{claim._id}}</a></li>
     </ul>
 
   </div>
