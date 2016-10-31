@@ -55,8 +55,11 @@ router.post('/api/claim', (req, res, err) => {
     .catch(err)
 })
 
-router.get('/confirm', (req, res) => {
-  res.render('index')
+router.get('/api/claims', (req, res, err) => {
+  Claim
+    .find()
+    .then(claim => res.json(claim))
+    .catch(err)
 })
 
 router.get("/404", (req, res) => {

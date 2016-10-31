@@ -106,8 +106,11 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
     chosenOpcode = null
   }
 
+  const getAll = (currentDealer) => {
+    return $http.get('/api/claims')
+  }
 
 
-  return { setDealer, getDealer, getDealers, setBrand, getBrand, setSection, getSections, getVehicles, getParts, getLabor, setPart, setVehicle, setOpcode, pendingClaim, getClaimDraft, postClaim, redoRepair, restartClaim }
+  return { setDealer, getDealer, getDealers, setBrand, getBrand, setSection, getSections, getVehicles, getParts, getLabor, setPart, setVehicle, setOpcode, pendingClaim, getClaimDraft, postClaim, redoRepair, restartClaim, getAll }
 
 })
