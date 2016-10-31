@@ -1,12 +1,12 @@
 'use strict';
 
-app.controller('ResultsCtrl', function($scope, DataFactory) {
+app.controller('ResultsCtrl', function($scope, DataFactory, MathFactory, $location) {
 
   $scope.claimsList = []
 
 
   const loadClaim = () => {
-    $scope.finalClaim = DataFactory.getClaimDraft()
+    $scope.presentClaim = DataFactory.getClaimDraft()
   }
 
 
@@ -26,11 +26,26 @@ app.controller('ResultsCtrl', function($scope, DataFactory) {
       })
   }
 
-  const viewClaim = (id) => {
-
+  $scope.viewClaim = (claim) => {
+    for (let i = 0; i < $scope.claimsList.length; i++) {
+      if ($scope.claimsList[i]._id === claim._id){
+        $scope.presentClaim = {
+          id: $scope.claimsList[i]._id,
+          dealer: $scope.claimsList[i].dealer,
+          rate: $scope.claimsList[i].rate,
+          parts: $scope.claimsList[i].parts,
+          totalParts: $scope.claimsList[i].totalParts,
+          labor: $scope.claimsList[i].labor,
+          laborHours: $scope.claimsList[i].laborHours,
+          totalLabor: $scope.claimsList[i].totalLabor,
+          claimTotal: $scope.claimsList[i].claimTotal
+        }
+      }
+    }
   }
 
 
   loadClaim()
   loadHistory()
+
 })
