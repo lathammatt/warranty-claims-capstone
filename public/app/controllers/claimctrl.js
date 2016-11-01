@@ -11,7 +11,7 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
   let trinkets = {}
 
   const changeImg = () => {
-  $('body').css('background-image', 'url(../img/engine.png)')
+    $('body').css('background-image', 'url(../img/engine.png)')
   }
 
   changeImg()
@@ -76,8 +76,8 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
     DataFactory.setOpcode(labor)
     DataFactory.getLabor()
       .then((opcodes) => {
-        for (let i = 0; i < opcodes.data.length; i++){
-          if (opcodes.data[i].name === labor){
+        for (let i = 0; i < opcodes.data.length; i++) {
+          if (opcodes.data[i].name === labor) {
             opcodeArray.push(opcodes.data[i])
           }
         }
@@ -116,9 +116,20 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
   }
 
   $scope.claimConfirm = () => {
-    DataFactory.pendingClaim()
-    $location.url('/confirm')
+    if (car === null) {
+      $('.spacer').html(`<div class="error"><span style="color:red">Please select a vehicle model</span></div>`)
+    } if (DataFactory.getSection() === null) {
+      $('.spacer').html(`<div class="error"><span style="color:red">Please select a section for repair</span></div>`)
+    } if (DataFactory.getPart() === null) {
+      $('.spacer').html(`<div class="error"><span style="color:red">Please select part for replacement or "no parts" from the menu</span></div>`)
+    } if (DataFactory.getOpcode() === null) {
+      $('.spacer').html(`<div class="error"><span style="color:red">Please select a repair operation code</span></div>`)
+    } else {
+      console.log("whoopsies")
+      DataFactory.pendingClaim()
+      $location.url('/confirm')
     }
+  }
 
 
 

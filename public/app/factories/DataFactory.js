@@ -18,10 +18,6 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
     return currentDealer
   }
 
-  const getDealers = () => {
-    return $http.get('/api/dealer')
-  }
-
   const setBrand = (brand) => {
     currentBrand = brand
   }
@@ -34,8 +30,16 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
     chosenSect = section
   }
 
+  const getSection = () => {
+    return chosenSect
+  }
+
   const setPart = (part) => {
     partReplaced = part
+  }
+
+  const getPart = () => {
+    return partReplaced
   }
 
   const setVehicle = (car) => {
@@ -44,6 +48,14 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
 
   const setOpcode = (labor) => {
     chosenOpcode = labor
+  }
+
+  const getOpcode = () => {
+    return chosenOpcode
+  }
+
+  const getDealers = () => {
+    return $http.get('/api/dealer')
   }
 
   const getVehicles = () => {
@@ -111,6 +123,6 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
   }
 
 
-  return { setDealer, getDealer, getDealers, setBrand, getBrand, setSection, getSections, getVehicles, getParts, getLabor, setPart, setVehicle, setOpcode, pendingClaim, getClaimDraft, postClaim, redoRepair, restartClaim, getAll }
+  return { setDealer, getDealer, getDealers, setBrand, getBrand, setSection, getSections, getVehicles, getParts, getLabor, setPart, setVehicle, setOpcode, pendingClaim, getClaimDraft, postClaim, redoRepair, restartClaim, getAll, getSection, getPart, getOpcode }
 
 })
