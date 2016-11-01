@@ -12,6 +12,7 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
 
   const changeImg = () => {
     $('body').css('background-image', 'url(../img/engine.png)')
+    $('body').css('background-position-y', "0")
   }
 
   changeImg()
@@ -118,11 +119,14 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
   $scope.claimConfirm = () => {
     if (car === null) {
       $('.spacer').html(`<div class="error"><span style="color:red">Please select a vehicle model</span></div>`)
-    } if (DataFactory.getSection() === null) {
+    }
+    if (DataFactory.getSection() === null) {
       $('.spacer').html(`<div class="error"><span style="color:red">Please select a section for repair</span></div>`)
-    } if (DataFactory.getPart() === null) {
+    }
+    if (DataFactory.getPart() === null) {
       $('.spacer').html(`<div class="error"><span style="color:red">Please select part for replacement or "no parts" from the menu</span></div>`)
-    } if (DataFactory.getOpcode() === null) {
+    }
+    if (DataFactory.getOpcode() === null) {
       $('.spacer').html(`<div class="error"><span style="color:red">Please select a repair operation code</span></div>`)
     } else {
       console.log("whoopsies")
