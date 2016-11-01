@@ -646,5 +646,356 @@
       "QX70",
       "QX80"
     ]
+  },
+  {
+    "name": "TD10AA Replace Hub",
+    "smallRate": 0.7,
+    "largeRate": 1.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "TD12AA Replace Axle",
+    "smallRate": 1.5,
+    "largeRate": 2.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "TD34AA Replace Caliper",
+    "smallRate": 0.5,
+    "largeRate": 0.8,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "TD35AA Replace Brake Pads",
+    "smallRate": 0.5,
+    "largeRate": 0.75,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "WH10AA Alignment",
+    "smallRate": 0.8,
+    "largeRate": 1.1,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "WH12AA Rotate and Balance",
+    "smallRate": 1.0,
+    "largeRate": 1.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "PA30AA Replace Fender",
+    "smallRate": 1.0,
+    "largeRate": 1.3,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "PA31AA Replace Fender",
+    "smallRate": 1.0,
+    "largeRate": 1.5,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "PA10AA Replace Roof",
+    "smallRate": 1.5,
+    "largeRate": 2.0,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "PA40AA Replace Rear Hatch Panel",
+    "smallRate": 1.0,
+    "largeRate": 1.5,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "PA41AA Replace Front Bumper",
+    "smallRate": 1.0,
+    "largeRate": 1.8,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "PA42AA Replace Rear Bumper",
+    "smallRate": 1.0,
+    "largeRate": 1.5,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
+  },
+  {
+    "name": "PA45AA Replace Door Panel",
+    "smallRate": 1.0,
+    "largeRate": 1.5,
+    "smallCars": [
+      "Sentra",
+      "Altima",
+      "Maxima",
+      "Rogue",
+      "Q30",
+      "Q50",
+      "Q60"
+    ],
+    "largeCars": [
+      "Frontier",
+      "Titan",
+      "Armada",
+      "370Z",
+      "Murano",
+      "Q70",
+      "QX30",
+      "QX50",
+      "QX60",
+      "QX70",
+      "QX80"
+    ]
   }
 ]

@@ -28,5 +28,10 @@
     "name": "Infiniti of Rivendell",
     "rate": 350,
     "brand": "Infiniti"
+  },
+  {
+    "name": "Infiniti of Los Angeles",
+    "rate": 150,
+    "brand": "Infiniti"
   }
 ]
