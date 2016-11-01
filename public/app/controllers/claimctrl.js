@@ -61,11 +61,9 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
   }
 
   $scope.populateLabor = (part) => {
-    console.log("part", part)
     let nameMatch = []
     $scope.laborList = []
     DataFactory.setPart(part)
-    console.log("trinkets", trinkets)
     for (let i = 0; i < trinkets.length; i++) {
       if (trinkets[i].name === part) {
         nameMatch.push(trinkets[i])
@@ -74,12 +72,9 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
     }
     for (let i = 0; i < nameMatch.length; i++) {
       for (let j = 0; j < nameMatch[i].models.length; j++) {
-        console.log("check", nameMatch[i].models[j])
-        console.log("car", car)
         if (nameMatch[i].models[j] === car) {
           MathFactory.setPartSum(nameMatch[i].cost)
           $scope.laborList.push(nameMatch[i].labor)
-          console.log("okay", $scope.laborList)
         }
       }
     }

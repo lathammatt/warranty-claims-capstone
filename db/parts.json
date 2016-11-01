@@ -843,33 +843,7 @@
     ]
   },
   {
-    "name": "Brake Pads",
-    "cost": 100,
-    "section": "Wheels",
-    "labor": "TD35AA Replace Brake Pads",
-    "models": [
-      "Sentra",
-      "Altima",
-      "Maxima",
-      "Rogue",
-      "Q30",
-      "Q50",
-      "Q60",
-      "Frontier",
-      "Titan",
-      "Armada",
-      "370Z",
-      "Murano",
-      "Q70",
-      "QX30",
-      "QX50",
-      "QX60",
-      "QX70",
-      "QX80"
-    ]
-  },
-  {
-    "name": "no parts replaced",
+    "name": "no parts replaced - alignment",
     "cost": 0,
     "section": "Wheels",
     "labor": "WH10AA Alignment",
@@ -895,7 +869,7 @@
     ]
   },
   {
-    "name": "no parts replaced",
+    "name": "no parts replaced - rotate/balance",
     "cost": 0,
     "section": "Wheels",
     "labor": "WH12AA Rotate and Balance",
