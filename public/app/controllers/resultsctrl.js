@@ -4,6 +4,13 @@ app.controller('ResultsCtrl', function($scope, DataFactory, MathFactory, $locati
 
   $scope.claimsList = []
 
+  const changeImg = () => {
+    $('body').css('background-image', 'url(../img/gears.png)')
+    $('body').css('background-position-y', "-25%")
+  }
+
+  changeImg()
+
 
   const loadClaim = () => {
     $scope.presentClaim = DataFactory.getClaimDraft()
@@ -28,7 +35,7 @@ app.controller('ResultsCtrl', function($scope, DataFactory, MathFactory, $locati
 
   $scope.viewClaim = (claim) => {
     for (let i = 0; i < $scope.claimsList.length; i++) {
-      if ($scope.claimsList[i]._id === claim._id){
+      if ($scope.claimsList[i]._id === claim._id) {
         $scope.presentClaim = {
           id: $scope.claimsList[i]._id,
           dealer: $scope.claimsList[i].dealer,

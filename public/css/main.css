@@ -36,6 +36,7 @@
 body {
   background-image: url('../img/grayedgears.png');
   background-position: top;
-  /*background-repeat: no-repeat;*/
+  /*background-position-y: -25%;*/
+  background-repeat: no-repeat;
 
 }

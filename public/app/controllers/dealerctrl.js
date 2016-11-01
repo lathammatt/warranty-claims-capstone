@@ -3,7 +3,8 @@
 app.controller("DealerCtrl", function($scope, $http, DataFactory, $location, MathFactory) {
 
   const changeImg = () => {
-  $('body').css('background-image', 'url(../img/inside.png)')
+    $('body').css('background-image', 'url(../img/inside.png)')
+    $('body').css('background-position-y', "0")
   }
 
   changeImg()
@@ -40,8 +41,7 @@ app.controller("DealerCtrl", function($scope, $http, DataFactory, $location, Mat
 
   $scope.startClaim = () => {
     let check = DataFactory.getDealer()
-    if (check === null) {
-    } else {
+    if (check === null) {} else {
       $location.url('/claim')
     }
   }
