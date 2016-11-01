@@ -1,6 +1,10 @@
 * {
   font-family: 'Lato', sans-serif;
+  /*font-style: italic;*/
+  font-size: 20px;
 }
+
+/*--------NAVBAR--------*/
 
 .navbar {
   background: linear-gradient(to right, black 15%, white 75%);
@@ -23,6 +27,14 @@
 }
 
 .spacer {
-  height: 145px
+  height: 205px
 }
 
+
+/*---------------*/
+
+body {
+  background-image: url('../img/grayedgears.png');
+
+
+}
