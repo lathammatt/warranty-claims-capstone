@@ -105,7 +105,6 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
     chosenSect = null
     partReplaced = null
     chosenOpcode = null
-    console.log("redoRepair", claimDraft)
   }
 
   const restartClaim = () => {

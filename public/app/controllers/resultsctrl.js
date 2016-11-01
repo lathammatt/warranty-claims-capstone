@@ -51,8 +51,19 @@ app.controller('ResultsCtrl', function($scope, DataFactory, MathFactory, $locati
     }
   }
 
+  $scope.newClaim = () => {
+    DataFactory.redoRepair()
+    $location.url('/claim')
+  }
+
+  $scope.resetPage = () => {
+    DataFactory.restartClaim()
+    $location.url('/dealer')
+  }
 
   loadClaim()
   loadHistory()
+
+
 
 })
