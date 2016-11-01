@@ -36,7 +36,19 @@
 body {
   background-image: url('../img/grayedgears.png');
   background-position: top;
-  /*background-position-y: -25%;*/
   background-repeat: no-repeat;
+}
 
+label {
+  font-size: 3rem;
+  font-style: italic;
+  margin: 20px 0 20px 0;
+}
+
+select {
+  /*margin-top: 10px;*/
+}
+
+.spacer2 {
+    height: 150px;
 }
