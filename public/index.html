@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Vehicle Warranty Claims</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
-  <script src="lib/jquery/dist/jquery.min.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Vehicle Warranty Claims</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<script src="lib/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body ng-app="Warranty">
-  <nav class="navbar navbar-default navbar-fixed-top navwrapper">
-    <div class="container-fluid">
-      <div class="row">
-        <h3>Warranty Claims</h3>
+	<nav class="navbar navbar-default navbar-fixed-top navwrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8">
+					<h1 class="navtitle">Vehicle Warranty Claims</h1>
+				</div>
+				<div class="col-md-4">
+					<img src="/img/navcars.jpg" class="navcars" alt="">
+				</div>
 
-      </div>
-    </div>
-    <!-- fluid container -->
-  </nav>
-  <div class="container">
-    <div class="spacer">
-    </div>
-    <div ng-view>
+			</div>
+		</div>
+		<!-- fluid container -->
+	</nav>
+	<div class="container">
+		<div class="spacer">
+		</div>
+		<div ng-view>
 
-    </div>
-  </div>
+		</div>
+	</div>
 
-  <!-- third party -->
-  <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="lib/angular/angular.min.js"></script>
-  <script src="lib/angular-route/angular-route.min.js"></script>
+	<!-- third party -->
+	<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="lib/angular-route/angular-route.min.js"></script>
 
-  <!-- controllers -->
-  <script src="/app/app.js"></script>
-  <script src="/app/controllers/dealerctrl.js"></script>
-  <script src="/app/controllers/claimctrl.js"></script>
-  <script src="/app/controllers/confirmctrl.js"></script>
-  <script src="/app/controllers/resultsctrl.js"></script>
+	<!-- controllers -->
+	<script src="/app/app.js"></script>
+	<script src="/app/controllers/dealerctrl.js"></script>
+	<script src="/app/controllers/claimctrl.js"></script>
+	<script src="/app/controllers/confirmctrl.js"></script>
+	<script src="/app/controllers/resultsctrl.js"></script>
 
-  <!-- factories -->
-  <script src="/app/factories/DataFactory.js"></script>
-  <script src="/app/factories/MathFactory.js"></script>
+	<!-- factories -->
+	<script src="/app/factories/DataFactory.js"></script>
+	<script src="/app/factories/MathFactory.js"></script>
 </body>
 
 </html>

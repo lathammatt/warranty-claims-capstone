@@ -1,4 +1,28 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(to right, black 15%, white 75%);
+}
+
+.navtitle {
+  font-family: 'Racing Sans One', cursive;
+  padding: 0 0 0 25px;
+  margin-bottom: 20px;
+  margin-top: 35px;
+  font-size: 50px;
+  background: -webkit-linear-gradient(white, #8fabaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navcars {
+  height: 125px;
+  float: right;
+}
+
 .spacer {
-  height: 75px
+  height: 145px
 }
 
