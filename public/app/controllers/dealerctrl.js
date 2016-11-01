@@ -40,8 +40,9 @@ app.controller("DealerCtrl", function($scope, $http, DataFactory, $location, Mat
   }
 
   $scope.startClaim = () => {
-    let check = DataFactory.getDealer()
-    if (check === null) {} else {
+    if (DataFactory.getDealer() === null || DataFactory.getBrand() === null) {
+      $('.error').html(`Please select option for each section`)
+    } else {
       $location.url('/claim')
     }
   }

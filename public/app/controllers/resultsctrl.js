@@ -6,7 +6,7 @@ app.controller('ResultsCtrl', function($scope, DataFactory, MathFactory, $locati
 
   const changeImg = () => {
     $('body').css('background-image', 'url(../img/gears.png)')
-    $('body').css('background-position-y', "-25%")
+    $('body').css('background-position-y', "-45%")
   }
 
   changeImg()
