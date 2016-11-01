@@ -717,7 +717,7 @@
   {
     "name": "Hub",
     "cost": 200,
-    "section": "Wheel",
+    "section": "Wheels",
     "labor": "TD10AA Replace Hub",
     "models": [
       "Sentra",
@@ -732,7 +732,7 @@
   {
     "name": "Hub",
     "cost": 275,
-    "section": "Wheel",
+    "section": "Wheels",
     "labor": "TD10AA Replace Hub",
     "models": [
       "Frontier",
@@ -751,7 +751,7 @@
   {
     "name": "Axle",
     "cost": 425,
-    "section": "Wheel",
+    "section": "Wheels",
     "labor": "TD12AA Replace Axle",
     "models": [
       "Frontier",
@@ -770,7 +770,7 @@
   {
     "name": "Axle",
     "cost": 250,
-    "section": "Wheel",
+    "section": "Wheels",
     "labor": "TD10AA Replace Axle",
     "models": [
       "Sentra",
@@ -785,7 +785,7 @@
   {
     "name": "Caliper",
     "cost": 100,
-    "section": "Wheel",
+    "section": "Wheels",
     "labor": "TD34AA Replace Caliper",
     "models": [
       "Sentra",
@@ -800,7 +800,7 @@
   {
     "name": "Caliper",
     "cost": 150,
-    "section": "Wheel",
+    "section": "Wheels",
     "labor": "TD34AA Replace Caliper",
     "models": [
       "Frontier",
@@ -819,7 +819,7 @@
   {
     "name": "Brake Pads",
     "cost": 100,
-    "section": "Wheel",
+    "section": "Wheels",
     "labor": "TD35AA Replace Brake Pads",
     "models": [
       "Sentra",
@@ -845,7 +845,7 @@
   {
     "name": "Brake Pads",
     "cost": 100,
-    "section": "Wheel",
+    "section": "Wheels",
     "labor": "TD35AA Replace Brake Pads",
     "models": [
       "Sentra",
@@ -871,7 +871,7 @@
   {
     "name": "no parts replaced",
     "cost": 0,
-    "section": "Wheel",
+    "section": "Wheels",
     "labor": "WH10AA Alignment",
     "models": [
       "Sentra",
@@ -897,7 +897,7 @@
   {
     "name": "no parts replaced",
     "cost": 0,
-    "section": "Wheel",
+    "section": "Wheels",
     "labor": "WH12AA Rotate and Balance",
     "models": [
       "Sentra",
