@@ -10,6 +10,12 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
   let car = null
   let trinkets = {}
 
+  const changeImg = () => {
+  $('body').css('background-image', 'url(../img/engine.png)')
+  }
+
+  changeImg()
+
   DataFactory.getVehicles()
     .then((vehicles) => {
       wheels = vehicles.data

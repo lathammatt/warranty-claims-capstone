@@ -1,6 +1,13 @@
 'use strict';
 
 app.controller("DealerCtrl", function($scope, $http, DataFactory, $location, MathFactory) {
+
+  const changeImg = () => {
+  $('body').css('background-image', 'url(../img/inside.png)')
+  }
+
+  changeImg()
+
   let shops = {}
   $scope.dealerList = []
   let selection = null
