@@ -127,19 +127,10 @@ app.controller('ClaimCtrl', function($scope, $http, $location, DataFactory, Math
   }
 
   $scope.claimConfirm = () => {
-    if (car === null) {
-      $('.spacer').html(`<div class="error"><span style="color:red">Please select a vehicle model</span></div>`)
-    }
-    if (DataFactory.getSection() === null) {
-      $('.spacer').html(`<div class="error"><span style="color:red">Please select a section for repair</span></div>`)
-    }
-    if (DataFactory.getPart() === null) {
-      $('.spacer').html(`<div class="error"><span style="color:red">Please select part for replacement or "no parts" from the menu</span></div>`)
-    }
-    if (DataFactory.getOpcode() === null) {
-      $('.spacer').html(`<div class="error"><span style="color:red">Please select a repair operation code</span></div>`)
-    } else {
+    if (car === null || DataFactory.getSection() === null || DataFactory.getPart() === null || DataFactory.getOpcode() === null) {
+      $('.error').html(`Please select option for each section`)
       console.log("whoopsies")
+    } else {
       DataFactory.pendingClaim()
       $location.url('/confirm')
     }
