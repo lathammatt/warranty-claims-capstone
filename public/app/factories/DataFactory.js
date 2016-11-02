@@ -76,6 +76,7 @@ app.factory('DataFactory', function($http, $q, MathFactory) {
 
   let claimDraft = {}
 
+  //----temp claim object----//
   const pendingClaim = () => {
     claimDraft = {
       dealer: currentDealer,

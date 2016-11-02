@@ -2,37 +2,36 @@
 
 app.controller('ResultsCtrl', function($scope, DataFactory, MathFactory, $location) {
 
-  $scope.claimsList = []
-
+  //----change background image----//
   const changeImg = () => {
     $('body').css('background-image', 'url(../img/gears.png)')
     $('body').css('background-position-y', "-95%")
   }
-
   changeImg()
 
+  $scope.claimsList = []
 
+  //----load submitted claim results to dom----//
   const loadClaim = () => {
     $scope.presentClaim = DataFactory.getClaimDraft()
   }
 
-
+  //----get all claims from dealer, push ids to dom----//
   const loadHistory = () => {
-    let moneyArray = []
-    let user = DataFactory.getDealer()
-    DataFactory.getAll()
-      .then((claims) => {
-        for (let i = 0; i < claims.data.length; i++) {
-          if (claims.data[i].dealer === user) {
-            $scope.claimsList.push(claims.data[i])
-            console.log($scope.claimsList)
-            moneyArray.push(claims.data[i].claimTotal)
-            $scope.dealerTotal = moneyArray.reduce((a, b) => a + b, 0)
-          } else {}
-        }
-      })
-  }
-
+      let moneyArray = []
+      let user = DataFactory.getDealer()
+      DataFactory.getAll()
+        .then((claims) => {
+          for (let i = 0; i < claims.data.length; i++) {
+            if (claims.data[i].dealer === user) { //---find only this dealer's claims---//
+              $scope.claimsList.push(claims.data[i])
+              moneyArray.push(claims.data[i].claimTotal) //---put sum of each claim in array
+              $scope.dealerTotal = moneyArray.reduce((a, b) => a + b, 0) //---tally up all claim totals
+            } else {}
+          }
+        })
+    }
+    //----set up for displaying info for claim selected on page----//
   $scope.viewClaim = (claim) => {
     for (let i = 0; i < $scope.claimsList.length; i++) {
       if ($scope.claimsList[i]._id === claim._id) {
@@ -51,6 +50,7 @@ app.controller('ResultsCtrl', function($scope, DataFactory, MathFactory, $locati
     }
   }
 
+  //-----BUTTONS----//
   $scope.newClaim = () => {
     DataFactory.redoRepair()
     $location.url('/claim')
@@ -63,7 +63,5 @@ app.controller('ResultsCtrl', function($scope, DataFactory, MathFactory, $locati
 
   loadClaim()
   loadHistory()
-
-
 
 })
