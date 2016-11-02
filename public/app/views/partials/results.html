@@ -2,24 +2,27 @@
 	<div class="col-md-2"></div>
 	<div class="col-md-4">
 		<div class="row">
-			<h3>Claim <span style="color:purple">{{presentClaim.id}}</span></h3>
+			<h3>Claim</h3>
+		</div>
+		<div class="row indent2">
+			<p><span style="color: #337ab7; font-family: 'Special Elite', cursive;">{{presentClaim.id}}</span></p>
 		</div>
 		<div class="row">
 			<h4>{{presentClaim.dealer}}</h4>
 		</div>
-		<div class="row">
+		<div class="row indent2">
 			<p>Rate: ${{presentClaim.rate}} per hour</p>
 		</div>
 		<div class="row">
 			<h4>Parts:</h4>
 		</div>
-		<div class="row">
+		<div class="row indent2">
 			<p>{{presentClaim.parts}} for ${{presentClaim.totalParts}}</p>
 		</div>
 		<div class="row">
 			<h4>Labor:</h4>
 		</div>
-		<div class="row">
+		<div class="row indent2">
 			<p>{{presentClaim.labor}}</p>
 			<p>{{presentClaim.laborHours}} hours for ${{presentClaim.totalLabor}}</p>
 		</div>
@@ -33,7 +36,7 @@
 		<div ng-model="dealerTotal">
 			<h2>Dealer Claims Total: <span style="color:green; font-size:3.5rem">${{dealerTotal}}</span></h2>
 		</div>
-		<div class="row">
+		<div class="row indent2">
 			<h3>History</h3>
 		</div>
 		<div class="row" ng-repeat="claim in claimsList">
@@ -48,10 +51,10 @@
 <div class="spacer2">
 
 </div>
-<div class="row">
-	<div class="col-md-4">
+<div class="row centered">
+	<!--<div class="col-md-4">
 
-	</div>
+	</div>-->
 	<button type="submit" class="btn btn-primary" ng-click="newClaim()">Start New Claim</button>
 	<button type="submit" class="btn btn-danger" ng-click="resetPage()">Reset Dealer</button>
 

@@ -1,29 +1,29 @@
-<div class="row">
+<div class="row indent">
   <label>Select Vehicle Model</label>
 </div>
-<div class="row">
+<div class="row indent">
   <select ng-model="model" ng-options="item for item in vehicleList" ng-change="populateSections(model)">
   </select>
 </div>
-<div class="row">
+<div class="row indent">
   <label>Select Section For Repair</label>
 </div>
-<div class="row">
+<div class="row indent">
   <select ng-model="section" ng-options="group for group in sectionsList" ng-change="populateParts(section)">
   </select>
 </div>
-<div class="row">
+<div class="row indent">
   <label>Select Parts Replaced</label>
 </div>
-<div class="row">
+<div class="row indent">
   <select ng-model="parts" ng-options="item for item in partsList" ng-change="populateLabor(parts)">
   </select>
 </div>
 </div>
-<div class="row">
+<div class="row indent">
   <label>Select Labor Opcode</label>
 </div>
-<div class="row">
+<div class="row indent">
   <select ng-model="labor" ng-options="item for item in laborList" ng-change="calculateLabor(labor)">
   </select>
 </div>
@@ -33,7 +33,7 @@
   </div>
 
 </div>
-<div class="row">
+<div class="row centered">
   <button type="submit" class="btn btn-success" ng-click="claimConfirm()">Submit Claim Entry</button>
   <button type="submit" class="btn btn-primary" ng-click="startOver()">Go Back to Brand Select</button>
   <button type="submit" class="btn btn-danger" ng-click="resetPage()">Reset Page</button>

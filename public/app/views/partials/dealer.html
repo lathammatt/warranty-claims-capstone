@@ -1,16 +1,16 @@
-<div class="row ">
+<div class="row indent">
 	<label>Select your vehicle brand</label>
 </div>
-<div class="row">
+<div class="row indent">
 	<select ng-model="brand" ng-change="brandSelect(brand)">
     <option value="Nissan">Nissan</option>
     <option value="Infiniti">Infiniti</option>
   </select>
 </div>
-<div class="row">
+<div class="row indent">
 	<label>Select your dealership</label>
 </div>
-<div class="row">
+<div class="row indent">
 	<select ng-model="dealers" ng-options="item for item in dealerList" ng-change="dealerChoice(dealers)">
     <option value="{{item}}>{{item}}"</option>
 
@@ -21,6 +21,6 @@
 
 	</div>
 </div>
-<div class="row">
+<div class="row centered">
 	<button type="submit" class="btn btn-primary" ng-click="startClaim()">Proceed to Claim Submission</button>
 </div>

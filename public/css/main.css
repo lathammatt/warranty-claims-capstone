@@ -46,7 +46,7 @@ label {
 }
 
 .spacer2 {
-    height: 115px;
+    height: 100px;
 }
 
 .intro {
@@ -92,4 +92,20 @@ p {
 .btn {
   font-weight: bolder;
   font-size: 2rem;
+}
+
+.indent {
+  margin-left: 15%
+}
+
+.indent2 {
+  margin-left: 5%
+}
+
+.confirmed {
+  padding: 6px 65px 6px 65px;
+}
+
+a {
+  font-family: 'Special Elite', cursive;
 }
