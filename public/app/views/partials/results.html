@@ -26,12 +26,19 @@
 			<p>{{presentClaim.labor}}</p>
 			<p>{{presentClaim.laborHours}} hours for ${{presentClaim.totalLabor}}</p>
 		</div>
-		<!--<div class="spacer"></div>-->
 		<div class="row">
 			<h2>Claim Total: <span style="color:green; font-size:3.5rem">${{presentClaim.claimTotal}}</span></h2>
 		</div>
+		<div class="spacer2">
+
+		</div>
+		<div class="row indent2">
+
+			<button type="submit" class="btn btn-primary" ng-click="newClaim()">Start New Claim</button>
+			<button type="submit" class="btn btn-danger" ng-click="resetPage()">Reset Dealer</button>
+
+		</div>
 	</div>
-	<!--<div class="spacer"></div>-->
 	<div class="col-md-4">
 		<div ng-model="dealerTotal">
 			<h2>Dealer Claims Total: <span style="color:green; font-size:3.5rem">${{dealerTotal}}</span></h2>
@@ -46,16 +53,4 @@
 
 		</div>
 	</div>
-</div>
-</div>
-<div class="spacer2">
-
-</div>
-<div class="row centered">
-	<!--<div class="col-md-4">
-
-	</div>-->
-	<button type="submit" class="btn btn-primary" ng-click="newClaim()">Start New Claim</button>
-	<button type="submit" class="btn btn-danger" ng-click="resetPage()">Reset Dealer</button>
-
 </div>
