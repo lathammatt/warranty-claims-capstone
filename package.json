@@ -25,8 +25,12 @@
   "homepage": "https://github.com/lathammatt/warranty-claims-capstone#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "bower": "^1.7.9",
     "express": "^4.14.0",
     "mongoose": "^4.6.4",
     "pug": "^2.0.0-beta6"
+  },
+  "devDependencies": {
+    "bower": "^1.7.9"
   }
 }
