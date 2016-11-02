@@ -4,6 +4,10 @@ const app = angular.module("Warranty", ['ngRoute'])
 
 app.config(function($routeProvider) {
   $routeProvider
+    .when('/', {
+      templateUrl: 'app/views/partials/intro.html',
+      controller: 'IntroCtrl'
+    })
     .when('/dealer', {
       templateUrl: 'app/views/partials/dealer.html',
       controller: 'DealerCtrl'
