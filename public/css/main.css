@@ -88,3 +88,8 @@ p {
 .centered {
   text-align: center;
 }
+
+.btn {
+  font-weight: bolder;
+  font-size: 2rem;
+}
