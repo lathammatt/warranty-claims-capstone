@@ -13,26 +13,26 @@
   },
   {
     "name": "Body"
-  },
-  {
-    "name": "Suspension"
-  },
-  {
-    "name": "Seats"
-  },
-  {
-    "name": "Windows"
-  },
-  {
-    "name": "Steering"
-  },
-  {
-    "name": "Finishers"
-  },
-  {
-    "name": "Emissions"
-  },
-  {
-    "name": "Nav/Radio"
   }
 ]
+  // {
+  //   "name": "Suspension"
+  // },
+  // {
+  //   "name": "Seats"
+  // },
+  // {
+  //   "name": "Windows"
+  // },
+  // {
+  //   "name": "Steering"
+  // },
+  // {
+  //   "name": "Finishers"
+  // },
+  // {
+  //   "name": "Emissions"
+  // },
+  // {
+  //   "name": "Nav/Radio"
+  // }
