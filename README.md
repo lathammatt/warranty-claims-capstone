@@ -2,7 +2,7 @@
 
 *workspace/nodeclass/warranty-claims-capstone*
 
-Backend capstone project based off of Nissan Warranty Claims table database. Project is designed to demonstrate abilities is database creation and usage.
+MEAN stack project - small-scale claims submission system based off of Nissan Warranty Claims table database. Project is designed to demonstrate abilities in database creation and usage.
 
 ![Warranty Claims](/public/img/screenshot.png?raw=true "warranty claims screenshot")
 
